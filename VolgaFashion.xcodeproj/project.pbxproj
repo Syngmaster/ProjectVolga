@@ -13,6 +13,7 @@
 		DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */; };
 		DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */; };
 		DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */; };
+		DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC17BC321FB8DFEB0056035A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC17BC341FB8DFEB0056035A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */,
 				DC17BC341FB8DFEB0056035A /* Info.plist */,
 				DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */,
+				DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */,
 			);
 			path = VolgaFashion;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */,
 				DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */,
 				DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */,
 				DC17BC2B1FB8DFEB0056035A /* Main.storyboard in Resources */,
