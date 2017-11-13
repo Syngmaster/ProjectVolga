@@ -13,7 +13,7 @@ class CategoryButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 0.5
+        self.layer.borderWidth = 0.4
     }
 
     override func draw(_ rect: CGRect) {

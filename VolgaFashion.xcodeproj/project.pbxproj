@@ -15,6 +15,8 @@
 		DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */; };
 		DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC441FB9BA4E0056035A /* ShopViewController.swift */; };
 		DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC481FB9D0130056035A /* CategoryButton.swift */; };
+		DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */; };
+		DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4C1FB9EE890056035A /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book Regular.otf"; sourceTree = "<group>"; };
 		DC17BC441FB9BA4E0056035A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		DC17BC481FB9D0130056035A /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		DC17BC4C1FB9EE890056035A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				DC17BC441FB9BA4E0056035A /* ShopViewController.swift */,
+				DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				DC17BC481FB9D0130056035A /* CategoryButton.swift */,
+				DC17BC4C1FB9EE890056035A /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +186,8 @@
 			files = (
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,
+				DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */,
+				DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
 				DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */,
 			);
