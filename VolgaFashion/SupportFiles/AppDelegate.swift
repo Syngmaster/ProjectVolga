@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 10)!], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 10)!], for: .selected)
+        
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().isTranslucent = false
 
         return true
     }

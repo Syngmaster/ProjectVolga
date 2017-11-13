@@ -1,5 +1,5 @@
 //
-//  WishlistViewController.swift
+//  MyBagViewController.swift
 //  VolgaFashion
 //
 //  Created by Syngmaster on 13/11/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WishlistViewController: UIViewController {
+class MyBagViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,9 @@ class WishlistViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func startShoppingAction(_ sender: UIButton) {
         tabBarController?.selectedIndex = 0
     }
+    
 }

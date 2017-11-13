@@ -17,6 +17,7 @@
 		DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC481FB9D0130056035A /* CategoryButton.swift */; };
 		DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */; };
 		DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4C1FB9EE890056035A /* CustomButton.swift */; };
+		DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DC17BC481FB9D0130056035A /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 		DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		DC17BC4C1FB9EE890056035A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				DC17BC441FB9BA4E0056035A /* ShopViewController.swift */,
 				DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */,
+				DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */,
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,
 				DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */,
