@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC251FB8DFEB0056035A /* AppDelegate.swift */; };
-		DC17BC281FB8DFEB0056035A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC271FB8DFEB0056035A /* ViewController.swift */; };
 		DC17BC2B1FB8DFEB0056035A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC291FB8DFEB0056035A /* Main.storyboard */; };
 		DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */; };
 		DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */; };
 		DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */; };
 		DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */; };
+		DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC441FB9BA4E0056035A /* ShopViewController.swift */; };
+		DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC481FB9D0130056035A /* CategoryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC17BC221FB8DFEB0056035A /* VolgaFashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolgaFashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC17BC251FB8DFEB0056035A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC17BC271FB8DFEB0056035A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC17BC2A1FB8DFEB0056035A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC17BC2D1FB8DFEB0056035A /* VolgaFashion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VolgaFashion.xcdatamodel; sourceTree = "<group>"; };
 		DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC17BC321FB8DFEB0056035A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC17BC341FB8DFEB0056035A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book Regular.otf"; sourceTree = "<group>"; };
+		DC17BC441FB9BA4E0056035A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		DC17BC481FB9D0130056035A /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		DC17BC241FB8DFEB0056035A /* VolgaFashion */ = {
 			isa = PBXGroup;
 			children = (
-				DC17BC251FB8DFEB0056035A /* AppDelegate.swift */,
-				DC17BC271FB8DFEB0056035A /* ViewController.swift */,
+				DC17BC411FB9B9E50056035A /* SupportFiles */,
+				DC17BC401FB9B9DF0056035A /* Views */,
+				DC17BC3F1FB9B9D80056035A /* Models */,
+				DC17BC3E1FB9B9C90056035A /* Controllers */,
 				DC17BC291FB8DFEB0056035A /* Main.storyboard */,
 				DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */,
 				DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */,
 				DC17BC341FB8DFEB0056035A /* Info.plist */,
 				DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */,
-				DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */,
 			);
 			path = VolgaFashion;
+			sourceTree = "<group>";
+		};
+		DC17BC3E1FB9B9C90056035A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC17BC441FB9BA4E0056035A /* ShopViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC17BC3F1FB9B9D80056035A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC17BC401FB9B9DF0056035A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC17BC481FB9D0130056035A /* CategoryButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC17BC411FB9B9E50056035A /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */,
+				DC17BC251FB8DFEB0056035A /* AppDelegate.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +178,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC17BC281FB8DFEB0056035A /* ViewController.swift in Sources */,
+				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
+				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
 				DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */,
 			);
