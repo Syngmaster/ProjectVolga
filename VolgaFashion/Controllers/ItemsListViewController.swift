@@ -22,6 +22,7 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
+
     
     @objc func searchAction(sender: UIBarButtonItem) {
         

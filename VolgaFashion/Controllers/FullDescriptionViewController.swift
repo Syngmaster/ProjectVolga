@@ -1,5 +1,5 @@
 //
-//  ItemDetailsViewController.swift
+//  FullDescriptionViewController.swift
 //  VolgaFashion
 //
 //  Created by Syngmaster on 15/11/2017.
@@ -8,22 +8,21 @@
 
 import UIKit
 
-class ItemDetailsViewController: UIViewController {
+class FullDescriptionViewController: UIViewController {
 
-    @IBOutlet weak var itemPhoto: UIImageView!
-    var photoIndex: Int!
-    var photoName: String?
+    var maxPosition = 70.0
+    var minPosition = UIScreen.main.bounds.height - 250
+    var progress = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let photoName = photoName {
-            itemPhoto.image = UIImage(named:photoName)
-        }
 
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        view.frame = CGRect(x: 0, y: minPosition, width: view.frame.width, height: view.frame.height)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
