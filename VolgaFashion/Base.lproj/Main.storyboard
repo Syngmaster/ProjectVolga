@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-bF-fik">
-                                        <rect key="frame" x="148.5" y="28" width="78" height="21.5"/>
+                                        <rect key="frame" x="151" y="27" width="73" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -307,7 +307,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE A NEW ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-3R-Kh8">
-                                        <rect key="frame" x="85" y="30.5" width="205" height="16.5"/>
+                                        <rect key="frame" x="94.5" y="30" width="186" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -391,7 +391,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bag is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-Lj-NHF">
-                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
+                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="3Wn-8E-Gqg"/>
                                 </constraints>
@@ -465,7 +465,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wishlist is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jes-7C-4Zh">
-                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
+                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="iik-BS-AvP"/>
                                 </constraints>
@@ -579,7 +579,7 @@
         <!--Items List View Controller-->
         <scene sceneID="6uq-Qw-Zw0">
             <objects>
-                <collectionViewController id="YyN-Za-rbR" customClass="ItemsListViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController hidesBottomBarWhenPushed="YES" id="YyN-Za-rbR" customClass="ItemsListViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g7h-Bv-fsk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -604,8 +604,8 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JA3-uI-qaS">
                                                     <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-fp-rTV" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="166.5" width="146" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-fp-rTV" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="166.5" width="132" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="5mJ-LA-imu"/>
                                                     </constraints>
@@ -614,7 +614,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="out-qg-wNv" customClass="PriceLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="139" y="297" width="78" height="14"/>
+                                                    <rect key="frame" x="170" y="295" width="47" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="XSb-bP-dOS"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -638,7 +641,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="dzp-lr-A2Y" secondAttribute="trailing" constant="15" id="6Us-tp-s1o"/>
                                                 <constraint firstAttribute="trailing" secondItem="out-qg-wNv" secondAttribute="trailing" constant="10" id="9uK-7g-kva"/>
                                                 <constraint firstAttribute="bottom" secondItem="out-qg-wNv" secondAttribute="bottom" constant="40" id="IJc-FD-2cV"/>
-                                                <constraint firstItem="out-qg-wNv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vI0-18-d8O" secondAttribute="leading" constant="139" id="Ka2-Y9-BmI"/>
+                                                <constraint firstItem="out-qg-wNv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vI0-18-d8O" secondAttribute="leading" constant="170" id="Ka2-Y9-BmI"/>
                                                 <constraint firstAttribute="bottom" secondItem="JA3-uI-qaS" secondAttribute="bottom" id="NRf-h3-geo"/>
                                                 <constraint firstItem="dzp-lr-A2Y" firstAttribute="top" secondItem="vI0-18-d8O" secondAttribute="top" constant="15" id="Snf-v9-7EN"/>
                                                 <constraint firstItem="JA3-uI-qaS" firstAttribute="leading" secondItem="vI0-18-d8O" secondAttribute="leading" id="Vxp-R2-yjE"/>
@@ -670,10 +673,50 @@
                             <outlet property="delegate" destination="YyN-Za-rbR" id="3Mw-OF-xCB"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="N4d-fs-xqx" kind="show" identifier="details" id="8QF-2Q-GYk"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSc-lt-WdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2309.5999999999999" y="-469.1154422788606"/>
+        </scene>
+        <!--Item Details View Controller-->
+        <scene sceneID="plo-XE-6ki">
+            <objects>
+                <viewController storyboardIdentifier="ItemDetailsViewController" id="Q8z-85-Wb3" customClass="ItemDetailsViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PMm-sr-dVl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-bJ-Pmf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="b7w-bJ-Pmf" secondAttribute="bottom" constant="100" id="tEc-lm-y8n"/>
+                            <constraint firstItem="b7w-bJ-Pmf" firstAttribute="trailing" secondItem="AHm-sQ-g13" secondAttribute="trailing" id="xYh-Il-UDD"/>
+                            <constraint firstItem="b7w-bJ-Pmf" firstAttribute="leading" secondItem="AHm-sQ-g13" secondAttribute="leading" id="xwX-6h-rXx"/>
+                            <constraint firstItem="b7w-bJ-Pmf" firstAttribute="top" secondItem="PMm-sr-dVl" secondAttribute="top" id="zO1-7h-mFX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AHm-sQ-g13"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemPhoto" destination="b7w-bJ-Pmf" id="9Eh-BG-Mqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sO-a3-hNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3754" y="-100"/>
+        </scene>
+        <!--Manage Page View Controller-->
+        <scene sceneID="TlJ-Yq-ZgC">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" hidesBottomBarWhenPushed="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="N4d-fs-xqx" customClass="ManagePageViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJp-Ca-phF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3102" y="-472"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="D0s-Ux-jyg">

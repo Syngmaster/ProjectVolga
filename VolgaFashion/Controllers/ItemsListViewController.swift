@@ -19,7 +19,8 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         searchBarButton.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = searchBarButton
         navigationItem.title = "SALE"
-
+        navigationItem.backBarButtonItem?.title = ""
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
     
     @objc func searchAction(sender: UIBarButtonItem) {
@@ -59,8 +60,17 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
 
     }
+    
 
     // MARK: UICollectionViewDelegate
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.performSegue(withIdentifier: "details", sender: nil)
+        
+    }
+
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

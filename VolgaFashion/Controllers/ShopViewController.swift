@@ -20,7 +20,6 @@ class ShopViewController: UIViewController {
         navigationItem.titleView = imageView
 
         navigationItem.backBarButtonItem?.title = ""
-        navigationItem.backBarButtonItem?.tintColor = UIColor.black
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
         let backButton = UIImage(named:"back_button_img.png")

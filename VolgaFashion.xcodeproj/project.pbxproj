@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */; };
+		DC0019351FBCA99D00651835 /* ManagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019341FBCA99D00651835 /* ManagePageViewController.swift */; };
 		DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0903291FBB683600CD04C1 /* DividerLabel.swift */; };
 		DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */; };
 		DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		DC0019341FBCA99D00651835 /* ManagePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePageViewController.swift; sourceTree = "<group>"; };
 		DC0903291FBB683600CD04C1 /* DividerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLabel.swift; sourceTree = "<group>"; };
 		DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				DC17BC521FBA01300056035A /* MyAccountViewController.swift */,
 				DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */,
 				DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */,
+				DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */,
+				DC0019341FBCA99D00651835 /* ManagePageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 			files = (
 				DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */,
 				DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */,
+				DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */,
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */,
 				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,
@@ -234,6 +241,7 @@
 				DC17BC531FBA01300056035A /* MyAccountViewController.swift in Sources */,
 				DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */,
 				DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */,
+				DC0019351FBCA99D00651835 /* ManagePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
