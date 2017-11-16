@@ -9,7 +9,7 @@
 import UIKit
 
 class ShopViewController: UIViewController {
-
+    var navTitle:String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,11 +26,34 @@ class ShopViewController: UIViewController {
         backButton?.withRenderingMode(.alwaysOriginal)
         navigationController?.navigationBar.backIndicatorImage = backButton
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
+        
+
     }
 
+    @IBAction func selectCategoryAction(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 0: navTitle = "WOMEN"
+        case 1: navTitle = "MEN"
+        case 2: navTitle = "UNISEX"
+        default: break
+        }
+        
+        self.performSegue(withIdentifier: "category", sender: nil)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "category" {
+            let dvc = segue.destination as! CategoryViewController
+            dvc.navTitle = navTitle
+            
+        }
+        
     }
     
 }

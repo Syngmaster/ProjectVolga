@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-bF-fik">
-                                        <rect key="frame" x="148.5" y="28" width="78" height="21.5"/>
+                                        <rect key="frame" x="151" y="27" width="73" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -307,7 +307,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE A NEW ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-3R-Kh8">
-                                        <rect key="frame" x="85" y="30.5" width="205" height="16.5"/>
+                                        <rect key="frame" x="94.5" y="30" width="186" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -391,7 +391,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bag is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-Lj-NHF">
-                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
+                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="3Wn-8E-Gqg"/>
                                 </constraints>
@@ -465,7 +465,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wishlist is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jes-7C-4Zh">
-                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
+                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="iik-BS-AvP"/>
                                 </constraints>
@@ -520,6 +520,9 @@
                                         <state key="normal" title="WOMEN">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectCategoryAction:" destination="aag-AM-GAC" eventType="touchUpInside" id="Ome-JY-GDK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-wf-SwM" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="125" y="0.0" width="125" height="464"/>
@@ -527,6 +530,9 @@
                                         <state key="normal" title="MEN">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectCategoryAction:" destination="aag-AM-GAC" eventType="touchUpInside" id="wnE-pN-SrD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btV-oN-GAO" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="250" y="0.0" width="125" height="464"/>
@@ -534,6 +540,9 @@
                                         <state key="normal" title="UNISEX">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectCategoryAction:" destination="aag-AM-GAC" eventType="touchUpInside" id="nx2-7p-FHa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -579,28 +588,66 @@
             </objects>
             <point key="canvasLocation" x="1520.8" y="-471.8140929535233"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="ySk-RV-LeI">
             <objects>
-                <collectionViewController id="uqi-zT-XRO" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vCx-4w-dmg">
+                <collectionViewController id="uqi-zT-XRO" customClass="CategoryViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="vCx-4w-dmg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sUr-vG-rMc">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sUr-vG-rMc">
+                            <size key="itemSize" width="224" height="199"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NG8-n7-1Wu">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="NG8-n7-1Wu" customClass="CategoryViewCell" customModule="VolgaFashion" customModuleProvider="target">
+                                <rect key="frame" x="75.5" y="0.0" width="224" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJR-bC-dd0" customClass="CustomItemCellView" customModule="VolgaFashion" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HeA-Vn-7Zw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOTHING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-Zo-Ey3" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="145" width="108" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="1cn-M1-IN5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="A4F-Zo-Ey3" secondAttribute="bottom" constant="30" id="3ai-ja-Ags"/>
+                                                <constraint firstAttribute="bottom" secondItem="HeA-Vn-7Zw" secondAttribute="bottom" id="AC2-Ft-pJ2"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A4F-Zo-Ey3" secondAttribute="trailing" constant="20" symbolic="YES" id="HSB-1C-wxP"/>
+                                                <constraint firstItem="HeA-Vn-7Zw" firstAttribute="top" secondItem="oJR-bC-dd0" secondAttribute="top" id="UhF-8f-Wwg"/>
+                                                <constraint firstAttribute="trailing" secondItem="HeA-Vn-7Zw" secondAttribute="trailing" id="XdR-Ri-gJb"/>
+                                                <constraint firstItem="A4F-Zo-Ey3" firstAttribute="leading" secondItem="oJR-bC-dd0" secondAttribute="leading" constant="10" id="rtM-ts-f47"/>
+                                                <constraint firstItem="HeA-Vn-7Zw" firstAttribute="leading" secondItem="oJR-bC-dd0" secondAttribute="leading" id="rzb-jC-4K8"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oJR-bC-dd0" secondAttribute="trailing" id="0TL-c4-xx9"/>
+                                    <constraint firstItem="oJR-bC-dd0" firstAttribute="leading" secondItem="NG8-n7-1Wu" secondAttribute="leading" id="AK7-Q4-Eqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="oJR-bC-dd0" secondAttribute="bottom" id="Cwl-w6-jap"/>
+                                    <constraint firstItem="oJR-bC-dd0" firstAttribute="top" secondItem="NG8-n7-1Wu" secondAttribute="top" id="zay-eQ-MLc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="HeA-Vn-7Zw" id="mVZ-eo-dkT"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -608,10 +655,13 @@
                             <outlet property="delegate" destination="uqi-zT-XRO" id="pDs-5F-SXi"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="YyN-Za-rbR" kind="show" identifier="list" id="JVg-Qe-Zb2"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57Z-KR-sbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="-931"/>
+            <point key="canvasLocation" x="2372" y="-931.48425787106453"/>
         </scene>
         <!--Items List View Controller-->
         <scene sceneID="6uq-Qw-Zw0">
@@ -642,7 +692,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-fp-rTV" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="166.5" width="146" height="18"/>
+                                                    <rect key="frame" x="8" y="166.5" width="132" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="5mJ-LA-imu"/>
                                                     </constraints>
@@ -727,13 +777,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR 400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-le-qdg">
-                                <rect key="frame" x="119" y="72" width="137" height="32.5"/>
+                                <rect key="frame" x="128" y="72" width="119" height="35"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umh-KC-JS6">
-                                <rect key="frame" x="23" y="119.5" width="330" height="257.5"/>
+                                <rect key="frame" x="23" y="122" width="330" height="255"/>
                                 <string key="text">Amazing festival Shell Jacket. Blue, navy and lilac. This is absolutely perfect for festivals! Elasticated cuffs and waist. Elastic has become loose in the cuffs and waist. Size XL Connor is 5 ft 10 and usually wears a size medium/large. Please refer to the correct measurements given on the Sizing &amp; Care tab. The condition is excellent but as all our items are Vintage they may be subject to a few wear and tear signs, but we will always point out if there are any noticeable defects. </string>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -1000,4 +1050,7 @@
         <image name="wishlist_empty_img" width="486" height="464"/>
         <image name="wishlist_icon" width="32" height="31"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="u6t-98-9ad"/>
+    </inferredMetricsTieBreakers>
 </document>

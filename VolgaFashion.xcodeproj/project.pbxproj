@@ -22,6 +22,7 @@
 		DC0019D81FBE055C00651835 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CF1FBE055C00651835 /* UIImageView+Tools.swift */; };
 		DC0019D91FBE055C00651835 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019D01FBE055C00651835 /* ZoomAnimatedTransitioning.swift */; };
 		DC0019DB1FBE0EBB00651835 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019DA1FBE0EBB00651835 /* CategoryViewController.swift */; };
+		DC0019DD1FBE107A00651835 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019DC1FBE107A00651835 /* CategoryViewCell.swift */; };
 		DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0903291FBB683600CD04C1 /* DividerLabel.swift */; };
 		DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */; };
 		DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */; };
@@ -62,6 +63,7 @@
 		DC0019CF1FBE055C00651835 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
 		DC0019D01FBE055C00651835 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		DC0019DA1FBE0EBB00651835 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		DC0019DC1FBE107A00651835 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		DC0903291FBB683600CD04C1 /* DividerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLabel.swift; sourceTree = "<group>"; };
 		DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */,
 				DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */,
 				DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */,
+				DC0019DC1FBE107A00651835 /* CategoryViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				DC0019D81FBE055C00651835 /* UIImageView+Tools.swift in Sources */,
 				DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */,
 				DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */,
+				DC0019DD1FBE107A00651835 /* CategoryViewCell.swift in Sources */,
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */,
 				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,

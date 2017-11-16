@@ -12,13 +12,19 @@ private let reuseIdentifier = "Cell"
 
 class ItemsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    var navTitle:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let searchBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(searchAction(sender:)))
         searchBarButton.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = searchBarButton
-        navigationItem.title = "SALE"
+        if let navTitle = navTitle {
+            navigationItem.title = navTitle
+        } else {
+            navigationItem.title = "SALE"
+        }
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
