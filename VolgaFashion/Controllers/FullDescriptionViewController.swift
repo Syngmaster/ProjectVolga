@@ -10,9 +10,10 @@ import UIKit
 
 class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelegate {
 
+    @IBOutlet weak var animatableLabel: UILabel!
     var maxPosition:CGFloat = 20.0
     var minPosition:CGFloat = UIScreen.main.bounds.height - 150
-    var progress = 0.0
+    var progress: CGFloat = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,26 +21,28 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
         let pan = UIPanGestureRecognizer.init(target: self, action: #selector(panGesture(sender:)))
         pan.delegate = self
         view.addGestureRecognizer(pan)
+
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         view.frame = CGRect(x: 0, y: minPosition, width: view.frame.width, height: view.frame.height)
-
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
     @objc func panGesture(sender: UIPanGestureRecognizer) {
         
         let translation = sender.translation(in: view)
         let velocity = sender.velocity(in: view)
-        
-        self.progress = max(self.progress, Double(fabs(translation.y/view.frame.width * 1.0)))
+        self.progress = max(self.progress, fabs(translation.y/view.frame.width * 1.0))
         
         let minY = view.frame.minY
         
@@ -73,8 +76,8 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
     }
 
     func animateParentView() {
-        let parentVC = self.parent as! ItemDetailsViewController
         
+        let parentVC = self.parent as! ItemDetailsViewController
         let positionY:CGFloat = maxPosition + 200
         
         if view.frame.origin.y <= positionY {
@@ -84,10 +87,12 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
             if view.frame.origin.y <= 20.0 {
                 UIView.animate(withDuration: 0.4, animations: {
                     parentVC.navigationItem.title = "VINTAGE 80S JACKET"
+                    self.animatableLabel.alpha = 0.0
                 })
             } else {
                 UIView.animate(withDuration: 0.4, animations: {
                     parentVC.navigationItem.title = ""
+                    self.animatableLabel.alpha = 1.0
                 })
             }
 

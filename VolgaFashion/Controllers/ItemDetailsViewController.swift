@@ -33,7 +33,7 @@ class ItemDetailsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         addBottomVC()
-
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
