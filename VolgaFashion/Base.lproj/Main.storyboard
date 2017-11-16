@@ -689,7 +689,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qa-fd-t4A">
-                                <rect key="frame" x="40" y="20" width="295" height="50"/>
+                                <rect key="frame" x="40" y="16" width="295" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fQS-fh-L6f"/>
                                 </constraints>
@@ -698,7 +698,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-le-qdg">
-                                <rect key="frame" x="136" y="85" width="102.5" height="39"/>
+                                <rect key="frame" x="136" y="81" width="102.5" height="39"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -706,7 +706,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2qa-fd-t4A" firstAttribute="top" secondItem="LnP-HF-Xtp" secondAttribute="top" id="HPU-p7-dQI"/>
+                            <constraint firstItem="2qa-fd-t4A" firstAttribute="top" secondItem="LnP-HF-Xtp" secondAttribute="top" multiplier="0.8" id="HPU-p7-dQI"/>
                             <constraint firstItem="fkE-le-qdg" firstAttribute="top" secondItem="2qa-fd-t4A" secondAttribute="bottom" constant="15" id="Kc7-yI-L8i"/>
                             <constraint firstItem="2qa-fd-t4A" firstAttribute="centerX" secondItem="ZfV-CJ-FGB" secondAttribute="centerX" id="TS9-bw-Yp4"/>
                             <constraint firstItem="fkE-le-qdg" firstAttribute="centerX" secondItem="ZfV-CJ-FGB" secondAttribute="centerX" id="aYO-vi-pzy"/>

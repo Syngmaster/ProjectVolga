@@ -32,11 +32,12 @@ class ItemDetailsViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         
         // Do any additional setup after loading the view.
+        addBottomVC()
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //addBottomVC()
     }
     func addBottomVC() {
         if let bottomVC = storyboard?.instantiateViewController(withIdentifier: "FullDescriptionViewController") {
