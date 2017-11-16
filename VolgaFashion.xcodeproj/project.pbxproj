@@ -12,8 +12,6 @@
 		DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */; };
 		DC0019971FBCD48800651835 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC0019961FBCD48800651835 /* Info.plist */; };
 		DC0019991FBDEE3E00651835 /* BottomButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019981FBDEE3E00651835 /* BottomButtonsViewController.swift */; };
-		DC0019B01FBDFFC600651835 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */; };
-		DC0019B11FBDFFC600651835 /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */; };
 		DC0019D11FBE055C00651835 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DC0019C81FBE055C00651835 /* .gitkeep */; };
 		DC0019D21FBE055C00651835 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019C91FBE055C00651835 /* ActivityIndicator.swift */; };
 		DC0019D31FBE055C00651835 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CA1FBE055C00651835 /* FullScreenSlideshowViewController.swift */; };
@@ -53,8 +51,6 @@
 		DC0019951FBCD48800651835 /* ImageSlideshow_framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSlideshow_framework.h; sourceTree = "<group>"; };
 		DC0019961FBCD48800651835 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC0019981FBDEE3E00651835 /* BottomButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonsViewController.swift; sourceTree = "<group>"; };
-		DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@2x.png"; sourceTree = "<group>"; };
-		DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		DC0019C81FBE055C00651835 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		DC0019C91FBE055C00651835 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DC0019CA1FBE055C00651835 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				DC0019C71FBE055C00651835 /* Classes */,
-				DC0019AB1FBDFFC600651835 /* Assets */,
 			);
 			name = ImageSlideshow;
 			path = "../../../../../../Downloads/ImageSlideshow-1.4.1/ImageSlideshow";
@@ -117,15 +112,6 @@
 				DC0019961FBCD48800651835 /* Info.plist */,
 			);
 			path = ImageSlideshow_framework;
-			sourceTree = "<group>";
-		};
-		DC0019AB1FBDFFC600651835 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */,
-				DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		DC0019C71FBE055C00651835 /* Classes */ = {
@@ -291,10 +277,8 @@
 				DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */,
 				DC0019971FBCD48800651835 /* Info.plist in Resources */,
 				DC0019D11FBE055C00651835 /* .gitkeep in Resources */,
-				DC0019B11FBDFFC600651835 /* ic_cross_white@3x.png in Resources */,
 				DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */,
 				DC17BC2B1FB8DFEB0056035A /* Main.storyboard in Resources */,
-				DC0019B01FBDFFC600651835 /* ic_cross_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
