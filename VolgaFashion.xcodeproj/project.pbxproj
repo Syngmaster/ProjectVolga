@@ -10,9 +10,6 @@
 		DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */; };
 		DC0019351FBCA99D00651835 /* ManagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019341FBCA99D00651835 /* ManagePageViewController.swift */; };
 		DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */; };
-		DC0019831FBCD47300651835 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DC00196F1FBCD47300651835 /* .gitkeep */; };
-		DC0019841FBCD47300651835 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019701FBCD47300651835 /* ic_cross_white@2x.png */; };
-		DC0019851FBCD47300651835 /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019711FBCD47300651835 /* ic_cross_white@3x.png */; };
 		DC0019861FBCD47300651835 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DC0019731FBCD47300651835 /* .gitkeep */; };
 		DC0019971FBCD48800651835 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC0019961FBCD48800651835 /* Info.plist */; };
 		DC0019991FBDEE3E00651835 /* BottomButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019981FBDEE3E00651835 /* BottomButtonsViewController.swift */; };
@@ -24,6 +21,9 @@
 		DC0019A81FBDFCA100651835 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019A01FBDFCA100651835 /* UIImage+AspectFit.swift */; };
 		DC0019A91FBDFCA100651835 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019A11FBDFCA100651835 /* UIImageView+Tools.swift */; };
 		DC0019AA1FBDFCA100651835 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019A21FBDFCA100651835 /* ZoomAnimatedTransitioning.swift */; };
+		DC0019AF1FBDFFC600651835 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DC0019AC1FBDFFC600651835 /* .gitkeep */; };
+		DC0019B01FBDFFC600651835 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */; };
+		DC0019B11FBDFFC600651835 /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */; };
 		DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0903291FBB683600CD04C1 /* DividerLabel.swift */; };
 		DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */; };
 		DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */; };
@@ -51,9 +51,6 @@
 		DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		DC0019341FBCA99D00651835 /* ManagePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePageViewController.swift; sourceTree = "<group>"; };
 		DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDescriptionViewController.swift; sourceTree = "<group>"; };
-		DC00196F1FBCD47300651835 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		DC0019701FBCD47300651835 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@2x.png"; sourceTree = "<group>"; };
-		DC0019711FBCD47300651835 /* ic_cross_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		DC0019731FBCD47300651835 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		DC0019951FBCD48800651835 /* ImageSlideshow_framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSlideshow_framework.h; sourceTree = "<group>"; };
 		DC0019961FBCD48800651835 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +63,9 @@
 		DC0019A01FBDFCA100651835 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AspectFit.swift"; sourceTree = "<group>"; };
 		DC0019A11FBDFCA100651835 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
 		DC0019A21FBDFCA100651835 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		DC0019AC1FBDFFC600651835 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@2x.png"; sourceTree = "<group>"; };
+		DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_cross_white@3x.png"; sourceTree = "<group>"; };
 		DC0903291FBB683600CD04C1 /* DividerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLabel.swift; sourceTree = "<group>"; };
 		DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
@@ -105,21 +105,11 @@
 		DC00196D1FBCD47300651835 /* ImageSlideshow */ = {
 			isa = PBXGroup;
 			children = (
-				DC00196E1FBCD47300651835 /* Assets */,
+				DC0019AB1FBDFFC600651835 /* Assets */,
 				DC0019721FBCD47300651835 /* Classes */,
 			);
 			name = ImageSlideshow;
 			path = "../../../../../../Downloads/ImageSlideshow-1.4.1/ImageSlideshow";
-			sourceTree = "<group>";
-		};
-		DC00196E1FBCD47300651835 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				DC00196F1FBCD47300651835 /* .gitkeep */,
-				DC0019701FBCD47300651835 /* ic_cross_white@2x.png */,
-				DC0019711FBCD47300651835 /* ic_cross_white@3x.png */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		DC0019721FBCD47300651835 /* Classes */ = {
@@ -155,6 +145,16 @@
 			name = Core;
 			path = ImageSlideshow/Classes/Core;
 			sourceTree = SOURCE_ROOT;
+		};
+		DC0019AB1FBDFFC600651835 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DC0019AC1FBDFFC600651835 /* .gitkeep */,
+				DC0019AD1FBDFFC600651835 /* ic_cross_white@2x.png */,
+				DC0019AE1FBDFFC600651835 /* ic_cross_white@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
 		};
 		DC17BC191FB8DFEB0056035A = {
 			isa = PBXGroup;
@@ -301,12 +301,12 @@
 				DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */,
 				DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */,
 				DC0019971FBCD48800651835 /* Info.plist in Resources */,
-				DC0019831FBCD47300651835 /* .gitkeep in Resources */,
-				DC0019851FBCD47300651835 /* ic_cross_white@3x.png in Resources */,
-				DC0019841FBCD47300651835 /* ic_cross_white@2x.png in Resources */,
+				DC0019B11FBDFFC600651835 /* ic_cross_white@3x.png in Resources */,
 				DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */,
 				DC17BC2B1FB8DFEB0056035A /* Main.storyboard in Resources */,
 				DC0019861FBCD47300651835 /* .gitkeep in Resources */,
+				DC0019AF1FBDFFC600651835 /* .gitkeep in Resources */,
+				DC0019B01FBDFFC600651835 /* ic_cross_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
