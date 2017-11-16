@@ -12,7 +12,7 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
 
     @IBOutlet weak var animatableLabel: UILabel!
     var maxPosition:CGFloat = 20.0
-    var minPosition:CGFloat = UIScreen.main.bounds.height - 150
+    var minPosition:CGFloat = UIScreen.main.bounds.height - 170
     var progress: CGFloat = 0.0
     
     override func viewDidLoad() {

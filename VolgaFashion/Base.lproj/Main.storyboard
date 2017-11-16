@@ -689,22 +689,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR 400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-le-qdg">
-                                <rect key="frame" x="119" y="79" width="137" height="32.5"/>
+                                <rect key="frame" x="119" y="72" width="137" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qa-fd-t4A">
-                                <rect key="frame" x="40" y="14" width="295" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fQS-fh-L6f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umh-KC-JS6">
-                                <rect key="frame" x="23" y="126.5" width="330" height="250.5"/>
+                                <rect key="frame" x="23" y="119.5" width="330" height="257.5"/>
                                 <string key="text">Amazing festival Shell Jacket. Blue, navy and lilac. This is absolutely perfect for festivals! Elasticated cuffs and waist. Elastic has become loose in the cuffs and waist. Size XL Connor is 5 ft 10 and usually wears a size medium/large. Please refer to the correct measurements given on the Sizing &amp; Care tab. The condition is excellent but as all our items are Vintage they may be subject to a few wear and tear signs, but we will always point out if there are any noticeable defects. </string>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -713,14 +704,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ik-C2-BwA">
                                 <rect key="frame" x="0.0" y="397" width="375" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-dN-PpD" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-dN-PpD" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="SFC-mL-eO0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
-                                        <state key="normal" title="Share with">
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="19"/>
+                                        <state key="normal" title="Share with" image="social-media_icon">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -745,19 +736,27 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="q9i-F8-xMI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="18"/>
                                         <state key="normal" title="Delivery &amp; Return Conditions">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qa-fd-t4A">
+                                <rect key="frame" x="40" y="12" width="295" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fQS-fh-L6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="umh-KC-JS6" firstAttribute="top" secondItem="fkE-le-qdg" secondAttribute="bottom" constant="15" id="3lU-Me-8Jo"/>
-                            <constraint firstItem="2qa-fd-t4A" firstAttribute="top" secondItem="LnP-HF-Xtp" secondAttribute="top" multiplier="0.7" id="HPU-p7-dQI"/>
-                            <constraint firstItem="fkE-le-qdg" firstAttribute="top" secondItem="2qa-fd-t4A" secondAttribute="bottom" constant="15" id="Kc7-yI-L8i"/>
+                            <constraint firstItem="fkE-le-qdg" firstAttribute="top" secondItem="2qa-fd-t4A" secondAttribute="bottom" constant="10" id="Kc7-yI-L8i"/>
                             <constraint firstItem="LnP-HF-Xtp" firstAttribute="bottom" secondItem="0ik-C2-BwA" secondAttribute="bottom" constant="120" id="NNy-It-PrA"/>
                             <constraint firstItem="2qa-fd-t4A" firstAttribute="centerX" secondItem="ZfV-CJ-FGB" secondAttribute="centerX" id="TS9-bw-Yp4"/>
                             <constraint firstItem="0ik-C2-BwA" firstAttribute="top" secondItem="umh-KC-JS6" secondAttribute="bottom" constant="20" id="Z9d-ad-Wng"/>
@@ -766,6 +765,7 @@
                             <constraint firstItem="0ik-C2-BwA" firstAttribute="centerX" secondItem="ZfV-CJ-FGB" secondAttribute="centerX" id="eHc-ZG-k6L"/>
                             <constraint firstItem="LnP-HF-Xtp" firstAttribute="trailing" secondItem="umh-KC-JS6" secondAttribute="trailing" constant="22.5" id="jgC-dm-Q3q"/>
                             <constraint firstItem="umh-KC-JS6" firstAttribute="centerX" secondItem="ZfV-CJ-FGB" secondAttribute="centerX" id="qOY-f7-aYj"/>
+                            <constraint firstItem="2qa-fd-t4A" firstAttribute="top" secondItem="ZfV-CJ-FGB" secondAttribute="top" constant="12" id="tJg-Wi-LZQ"/>
                             <constraint firstItem="LnP-HF-Xtp" firstAttribute="trailing" secondItem="0ik-C2-BwA" secondAttribute="trailing" id="zTX-te-ceh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LnP-HF-Xtp"/>
@@ -778,10 +778,10 @@
             </objects>
             <point key="canvasLocation" x="3852" y="-570"/>
         </scene>
-        <!--View Controller-->
+        <!--Bottom Buttons View Controller-->
         <scene sceneID="1TV-9O-qrf">
             <objects>
-                <viewController id="qZ9-L3-Kwc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BottomButtonsViewController" id="qZ9-L3-Kwc" customClass="BottomButtonsViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XhZ-uU-FJl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -791,11 +791,17 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxr-4R-wo0" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                                        <state key="normal" title="ADD TO BASKET">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2El-iw-j9n" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                                        <state key="normal" title="ADD TO WISHLIST">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -825,15 +831,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E64-gi-bnG" customClass="ImageSlideshow" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="wog-oa-aJF"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AHm-sQ-g13" firstAttribute="bottom" secondItem="E64-gi-bnG" secondAttribute="bottom" constant="170" id="5CQ-PM-VCr"/>
                             <constraint firstItem="E64-gi-bnG" firstAttribute="trailing" secondItem="AHm-sQ-g13" secondAttribute="trailing" id="Dax-Aw-vuM"/>
                             <constraint firstItem="E64-gi-bnG" firstAttribute="top" secondItem="PMm-sr-dVl" secondAttribute="top" id="d2p-cy-ftx"/>
                             <constraint firstItem="E64-gi-bnG" firstAttribute="leading" secondItem="AHm-sQ-g13" secondAttribute="leading" id="nTH-B6-lhH"/>
@@ -952,6 +956,7 @@
         <image name="mybag_empty_img" width="434" height="508"/>
         <image name="mybag_icon" width="28" height="31"/>
         <image name="phone_button_img" width="31" height="21"/>
+        <image name="social-media_icon" width="132" height="38"/>
         <image name="store_icon" width="33" height="29"/>
         <image name="twitter_button" width="142" height="142"/>
         <image name="wishlist_empty_img" width="486" height="464"/>

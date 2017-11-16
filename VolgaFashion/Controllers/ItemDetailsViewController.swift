@@ -46,7 +46,16 @@ class ItemDetailsViewController: UIViewController {
             bottomVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: view.frame.height)
             
             view.addSubview(bottomVC.view)
-            view.bringSubview(toFront: bottomVC.view)
+            //view.bringSubview(toFront: bottomVC.view)
+        }
+        
+        if let buttonsVC = storyboard?.instantiateViewController(withIdentifier: "BottomButtonsViewController") {
+            addChildViewController(buttonsVC)
+            buttonsVC.didMove(toParentViewController: self)
+            buttonsVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: 50)
+            
+            view.addSubview(buttonsVC.view)
+            view.bringSubview(toFront: buttonsVC.view)
         }
     }
     
