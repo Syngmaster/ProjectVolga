@@ -10,21 +10,45 @@ import UIKit
 
 class ItemDetailsViewController: UIViewController {
 
-    @IBOutlet weak var itemPhoto: UIImageView!
-    var photoIndex: Int!
-    var photoName: String?
+
+    @IBOutlet weak var imageSliderView: ImageSlideshow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let photoName = photoName {
-            itemPhoto.image = UIImage(named:photoName)
-        }
-
+        imageSliderView.setImageInputs([
+            ImageSource(image:UIImage(named:"002.png")!),
+            ImageSource(image:UIImage(named:"004.png")!),
+            ImageSource(image:UIImage(named:"005.png")!),
+            ImageSource(image:UIImage(named:"006.png")!),
+            ImageSource(image:UIImage(named:"007.png")!)
+            
+            ])
+        imageSliderView.contentScaleMode = .scaleToFill
+        view.bringSubview(toFront: imageSliderView)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //addBottomVC()
+    }
+    func addBottomVC() {
+        if let bottomVC = storyboard?.instantiateViewController(withIdentifier: "FullDescriptionViewController") {
+            addChildViewController(bottomVC)
+            bottomVC.didMove(toParentViewController: self)
+            bottomVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: view.frame.height)
+            
+            view.addSubview(bottomVC.view)
+            view.bringSubview(toFront: bottomVC.view)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

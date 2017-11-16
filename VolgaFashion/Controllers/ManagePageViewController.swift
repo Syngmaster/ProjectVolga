@@ -21,7 +21,6 @@ class ManagePageViewController: UIPageViewController, UIPageViewControllerDelega
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         
-        dataSource = self
         delegate = self
         
         if let vc = viewPhotoController(currentIndex) {
@@ -46,8 +45,7 @@ class ManagePageViewController: UIPageViewController, UIPageViewControllerDelega
     
     func viewPhotoController(_ index: Int) -> ItemDetailsViewController? {
         if let storyboard = storyboard, let page = storyboard.instantiateViewController(withIdentifier: "ItemDetailsViewController") as? ItemDetailsViewController {
-            page.photoName = photos[index]
-            page.photoIndex = index
+
             return page
         }
         return nil
@@ -66,43 +64,4 @@ class ManagePageViewController: UIPageViewController, UIPageViewControllerDelega
 
 }
 
-//MARK: implementation of UIPageViewControllerDataSource
 
-extension ManagePageViewController : UIPageViewControllerDataSource {
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if let vc = viewController as? ItemDetailsViewController,
-            let index = vc.photoIndex,
-            index > 0 {
-            return viewPhotoController(index - 1)
-        }
-        return nil
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if let vc = viewController as? ItemDetailsViewController,
-        let index = vc.photoIndex,
-            (index + 1) < photos.count {
-            return viewPhotoController(index + 1)
-        }
-        return nil
-    
-    }
-    
-    // MARK: UIPageViewControllerDelegate
-
-    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
-     
-        if let contentVC = pendingViewControllers[0] as? ItemDetailsViewController {
-            pageControl.currentPage = contentVC.photoIndex
-        }
-    }
-    
-    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if !completed {
-            let contentVC = previousViewControllers[0] as! ItemDetailsViewController
-            pageControl.currentPage = contentVC.photoIndex
-        }
-    }
-    
-}
