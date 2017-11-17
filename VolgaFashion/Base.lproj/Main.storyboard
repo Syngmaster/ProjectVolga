@@ -514,7 +514,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-VN-E5n">
                                 <rect key="frame" x="0.0" y="64" width="375" height="464"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-so-5hK" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-so-5hK" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="464"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                         <state key="normal" title="WOMEN">
@@ -524,7 +524,7 @@
                                             <action selector="selectCategoryAction:" destination="aag-AM-GAC" eventType="touchUpInside" id="Ome-JY-GDK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-wf-SwM" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-wf-SwM" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="125" y="0.0" width="125" height="464"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                         <state key="normal" title="MEN">
@@ -534,7 +534,7 @@
                                             <action selector="selectCategoryAction:" destination="aag-AM-GAC" eventType="touchUpInside" id="wnE-pN-SrD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btV-oN-GAO" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btV-oN-GAO" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="250" y="0.0" width="125" height="464"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                         <state key="normal" title="UNISEX">
@@ -546,7 +546,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZs-v5-xFC" customClass="CategoryButton" customModule="VolgaFashion" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZs-v5-xFC" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="528" width="375" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Ont-wQ-TEd"/>
@@ -792,7 +792,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0ik-C2-BwA">
                                 <rect key="frame" x="0.0" y="397" width="375" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-dN-PpD" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-dN-PpD" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -806,11 +806,11 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pvQ-sH-ib8">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-zp-zmB" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-zp-zmB" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
                                                 <state key="normal" image="phone_button_img"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-ZY-BLz" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-ZY-BLz">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
                                                 <state key="normal" image="email_button_img"/>
                                             </button>
@@ -819,7 +819,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Nyb-jm-oqm"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfc-bz-fds" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfc-bz-fds" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="q9i-F8-xMI"/>
@@ -884,7 +884,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2El-iw-j9n" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2El-iw-j9n" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
                                         <state key="normal" title="ADD TO WISHLIST">

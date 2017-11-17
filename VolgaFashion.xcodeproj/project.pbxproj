@@ -15,7 +15,7 @@
 		DC0019D11FBE055C00651835 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DC0019C81FBE055C00651835 /* .gitkeep */; };
 		DC0019D21FBE055C00651835 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019C91FBE055C00651835 /* ActivityIndicator.swift */; };
 		DC0019D31FBE055C00651835 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CA1FBE055C00651835 /* FullScreenSlideshowViewController.swift */; };
-		DC0019D41FBE055C00651835 /* ImageSlideshow 17-34-16-973.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CB1FBE055C00651835 /* ImageSlideshow 17-34-16-973.swift */; };
+		DC0019D41FBE055C00651835 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CB1FBE055C00651835 /* ImageSlideshow.swift */; };
 		DC0019D51FBE055C00651835 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CC1FBE055C00651835 /* ImageSlideshowItem.swift */; };
 		DC0019D61FBE055C00651835 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CD1FBE055C00651835 /* InputSource.swift */; };
 		DC0019D71FBE055C00651835 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019CE1FBE055C00651835 /* UIImage+AspectFit.swift */; };
@@ -56,7 +56,7 @@
 		DC0019C81FBE055C00651835 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		DC0019C91FBE055C00651835 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DC0019CA1FBE055C00651835 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
-		DC0019CB1FBE055C00651835 /* ImageSlideshow 17-34-16-973.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageSlideshow 17-34-16-973.swift"; sourceTree = "<group>"; };
+		DC0019CB1FBE055C00651835 /* ImageSlideshow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlideshow.swift; sourceTree = "<group>"; };
 		DC0019CC1FBE055C00651835 /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSlideshowItem.swift; sourceTree = "<group>"; };
 		DC0019CD1FBE055C00651835 /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		DC0019CE1FBE055C00651835 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AspectFit.swift"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				DC0019C81FBE055C00651835 /* .gitkeep */,
 				DC0019C91FBE055C00651835 /* ActivityIndicator.swift */,
 				DC0019CA1FBE055C00651835 /* FullScreenSlideshowViewController.swift */,
-				DC0019CB1FBE055C00651835 /* ImageSlideshow 17-34-16-973.swift */,
+				DC0019CB1FBE055C00651835 /* ImageSlideshow.swift */,
 				DC0019CC1FBE055C00651835 /* ImageSlideshowItem.swift */,
 				DC0019CD1FBE055C00651835 /* InputSource.swift */,
 				DC0019CE1FBE055C00651835 /* UIImage+AspectFit.swift */,
@@ -321,7 +321,7 @@
 				DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */,
 				DC0019D21FBE055C00651835 /* ActivityIndicator.swift in Sources */,
 				DC17BC531FBA01300056035A /* MyAccountViewController.swift in Sources */,
-				DC0019D41FBE055C00651835 /* ImageSlideshow 17-34-16-973.swift in Sources */,
+				DC0019D41FBE055C00651835 /* ImageSlideshow.swift in Sources */,
 				DC0019991FBDEE3E00651835 /* BottomButtonsViewController.swift in Sources */,
 				DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */,
 				DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */,
