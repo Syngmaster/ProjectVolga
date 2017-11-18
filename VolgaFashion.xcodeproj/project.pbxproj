@@ -43,8 +43,7 @@
 		DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */; };
 		DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */; };
 		DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */; };
-		DCD61B1D1FC0534F00C64075 /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */; };
-		DCD61B1F1FC054F900C64075 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1E1FC054F900C64075 /* PopAnimator.swift */; };
+		DCD61B1D1FC0534F00C64075 /* PushAndPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */; };
 		DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +87,7 @@
 		DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTitleLabel.swift; sourceTree = "<group>"; };
 		DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
 		DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCellView.swift; sourceTree = "<group>"; };
-		DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimator.swift; sourceTree = "<group>"; };
-		DCD61B1E1FC054F900C64075 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAndPopAnimator.swift; sourceTree = "<group>"; };
 		DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,8 +226,7 @@
 		DCD61B1B1FC0531D00C64075 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */,
-				DCD61B1E1FC054F900C64075 /* PopAnimator.swift */,
+				DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -322,7 +319,7 @@
 				DC0019D31FBE055C00651835 /* FullScreenSlideshowViewController.swift in Sources */,
 				DC0019DB1FBE0EBB00651835 /* CategoryViewController.swift in Sources */,
 				DC17BC511FB9FFC70056035A /* SignInViewController.swift in Sources */,
-				DCD61B1D1FC0534F00C64075 /* PushAnimator.swift in Sources */,
+				DCD61B1D1FC0534F00C64075 /* PushAndPopAnimator.swift in Sources */,
 				DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */,
 				DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */,
 				DC0019D71FBE055C00651835 /* UIImage+AspectFit.swift in Sources */,
@@ -332,7 +329,6 @@
 				DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
 				DC17BC551FBA05FE0056035A /* CustomNavView.swift in Sources */,
-				DCD61B1F1FC054F900C64075 /* PopAnimator.swift in Sources */,
 				DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */,
 				DC0019D61FBE055C00651835 /* InputSource.swift in Sources */,
 				DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */,

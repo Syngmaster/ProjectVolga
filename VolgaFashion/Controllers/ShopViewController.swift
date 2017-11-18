@@ -63,12 +63,7 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         if (fromVC.isMember(of: ItemDetailsViewController.self) || toVC.isMember(of: ItemDetailsViewController.self)) {
-            
-            if operation == .push {
-                return PushAnimator()
-            } else {
-                return PopAnimator()
-            }
+            return PushAndPopAnimator(operation: operation)
         } else {
             return nil
         }

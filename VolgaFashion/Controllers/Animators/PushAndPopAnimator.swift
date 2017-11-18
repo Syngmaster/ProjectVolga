@@ -1,5 +1,5 @@
 //
-//  PopAnimator.swift
+//  PushAnimator.swift
 //  VolgaFashion
 //
 //  Created by Syngmaster on 18/11/2017.
@@ -8,13 +8,76 @@
 
 import UIKit
 
-class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+    
+    let _operationType : UINavigationControllerOperation
+    let _transitionDuration : TimeInterval
+    
+    init(operation: UINavigationControllerOperation) {
+        _operationType = operation
+        _transitionDuration = 0.7
+    }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 0.7
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        if _operationType == .push {
+            performPushTransition(transitionContext)
+        } else if _operationType == .pop {
+            performPopTransition(transitionContext)
+        }
+    }
+    
+    
+    func performPushTransition(_ transitionContext:UIViewControllerContextTransitioning) {
+        
+        guard let toView = transitionContext.view(forKey: .to)
+            else { return }
+        
+        let container = transitionContext.containerView
+        
+        guard
+            let fromVC = transitionContext.viewController(forKey: .from) as? ItemsListViewController,
+            let fromView = fromVC.collectionView,
+            let selectedCell = fromVC.selectedCell as? ItemViewCell
+            else { return }
+        
+        container.addSubview(toView)
+        let screenshotToView =  UIImageView(image: toView.screenshot)
+        screenshotToView.frame = selectedCell.frame
+        
+        let containerCoord = fromView.convert(screenshotToView.frame.origin, to: container)
+        screenshotToView.frame.origin = containerCoord
+        
+        let screenshotFromView = UIImageView(image: selectedCell.imageView.screenshot)
+        screenshotFromView.frame = screenshotToView.frame
+        
+        container.addSubview(screenshotToView)
+        container.addSubview(screenshotFromView)
+        
+        toView.isHidden = true
+        screenshotToView.isHidden = false
+        
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            
+            screenshotToView.frame = UIScreen.main.bounds
+            screenshotToView.frame.origin = CGPoint(x: 0.0, y: 0.0)
+            screenshotFromView.frame = screenshotToView.frame
+            
+            
+        }) { _ in
+            
+            screenshotToView.removeFromSuperview()
+            screenshotFromView.removeFromSuperview()
+            toView.isHidden = false
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            
+        }
+    }
+    
+    func performPopTransition(_ transitionContext:UIViewControllerContextTransitioning) {
         
         guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else {
             // Something really bad happend and it is not possible to perform the transition
@@ -73,8 +136,6 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             
         }
-    
+        
     }
 }
-
-

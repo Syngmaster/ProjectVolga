@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-bF-fik">
-                                        <rect key="frame" x="151" y="27" width="73" height="23.5"/>
+                                        <rect key="frame" x="148.5" y="28" width="78" height="21.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -210,40 +210,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6Yj-gd-D2f">
-                                <rect key="frame" x="37.5" y="94.5" width="300" height="492.5"/>
+                                <rect key="frame" x="0.0" y="94.5" width="0.0" height="492.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-g8-zOj">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="99"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="68.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-15-xvS">
-                                        <rect key="frame" x="0.0" y="108" width="300" height="93.5"/>
+                                        <rect key="frame" x="0.0" y="77.5" width="0.0" height="0.0"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-tu-3rR">
-                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="deE-tu-3rR" secondAttribute="height" multiplier="1:1" id="hnm-bH-XaG"/>
                                                 </constraints>
                                                 <state key="normal" image="facebook_button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-eQ-kfa">
-                                                <rect key="frame" x="103.5" y="0.0" width="93" height="93.5"/>
+                                                <rect key="frame" x="116.5" y="0.0" width="0.0" height="0.0"/>
                                                 <state key="normal" image="twitter_button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTC-h3-YB7">
-                                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="93.5"/>
+                                                <rect key="frame" x="268.5" y="0.0" width="0.0" height="0.0"/>
                                                 <state key="normal" image="google_button"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-6L-H9L">
-                                        <rect key="frame" x="0.0" y="210.5" width="300" height="29.5"/>
+                                        <rect key="frame" x="0.0" y="228.5" width="0.0" height="20.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-4g-6Is" customClass="DividerLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="249" width="300" height="16"/>
+                                        <rect key="frame" x="0.0" y="258" width="0.0" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="fWJ-Ao-XNs"/>
                                         </constraints>
@@ -252,14 +251,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-Yg-UXF">
-                                        <rect key="frame" x="0.0" y="274" width="300" height="29.5"/>
+                                        <rect key="frame" x="0.0" y="283" width="0.0" height="20.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-t2-8lK">
-                                        <rect key="frame" x="0.0" y="312.5" width="300" height="180"/>
+                                        <rect key="frame" x="0.0" y="312.5" width="0.0" height="180"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Full name*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beW-Sc-UhL">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="35.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="VuF-I5-JmW"/>
                                                 </constraints>
@@ -268,7 +267,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Email*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uur-JD-OB8">
-                                                <rect key="frame" x="0.0" y="48.5" width="300" height="35"/>
+                                                <rect key="frame" x="0.0" y="48.5" width="0.0" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="6zg-gr-pIX"/>
                                                 </constraints>
@@ -277,7 +276,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-G5-aeg">
-                                                <rect key="frame" x="0.0" y="96.5" width="300" height="35"/>
+                                                <rect key="frame" x="0.0" y="96.5" width="0.0" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="57V-I4-LZQ"/>
                                                 </constraints>
@@ -286,7 +285,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering your account, you agree with to our Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQ3-hg-Wdw">
-                                                <rect key="frame" x="0.0" y="144.5" width="300" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="144.5" width="0.0" height="35.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -304,16 +303,16 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxU-2h-Xma" customClass="CustomNavView" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="64.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE A NEW ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-3R-Kh8">
-                                        <rect key="frame" x="94.5" y="30" width="186" height="17.5"/>
+                                        <rect key="frame" x="-102.5" y="30.5" width="205" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIL-Ld-jZn">
-                                        <rect key="frame" x="338" y="27.5" width="22" height="22"/>
+                                        <rect key="frame" x="411" y="27.5" width="22" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="22" id="Pv5-6T-MPC"/>
                                             <constraint firstAttribute="width" secondItem="tIL-Ld-jZn" secondAttribute="height" multiplier="1:1" id="r5g-sX-kQw"/>
@@ -335,7 +334,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-zb-eu8" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="602" width="300" height="45"/>
+                                <rect key="frame" x="0.0" y="602" width="0.0" height="45"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="h7k-v6-2MF"/>
@@ -391,7 +390,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bag is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-Lj-NHF">
-                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
+                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="3Wn-8E-Gqg"/>
                                 </constraints>
@@ -465,7 +464,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your wishlist is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jes-7C-4Zh">
-                                <rect key="frame" x="67.5" y="132.5" width="240" height="23.5"/>
+                                <rect key="frame" x="67.5" y="134.5" width="240" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="iik-BS-AvP"/>
                                 </constraints>
@@ -701,7 +700,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="out-qg-wNv" customClass="PriceLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="69" y="-28" width="29" height="16"/>
+                                                    <rect key="frame" x="61" y="-28" width="37" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="XSb-bP-dOS"/>
                                                     </constraints>
@@ -775,13 +774,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR 400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-le-qdg">
-                                <rect key="frame" x="128" y="72" width="119" height="35"/>
+                                <rect key="frame" x="119" y="72" width="137" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umh-KC-JS6">
-                                <rect key="frame" x="23" y="122" width="330" height="255"/>
+                                <rect key="frame" x="23" y="119.5" width="330" height="257.5"/>
                                 <string key="text">Amazing festival Shell Jacket. Blue, navy and lilac. This is absolutely perfect for festivals! Elasticated cuffs and waist. Elastic has become loose in the cuffs and waist. Size XL Connor is 5 ft 10 and usually wears a size medium/large. Please refer to the correct measurements given on the Sizing &amp; Care tab. The condition is excellent but as all our items are Vintage they may be subject to a few wear and tear signs, but we will always point out if there are any noticeable defects. </string>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
                                 <nil key="textColor"/>
