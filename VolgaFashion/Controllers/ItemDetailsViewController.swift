@@ -24,28 +24,20 @@ class ItemDetailsViewController: UIViewController {
             ImageSource(image:UIImage(named:"007.png")!)
             
             ])
-        imageSliderView.contentScaleMode = .scaleToFill
+        imageSliderView.contentScaleMode = .scaleAspectFill
         view.bringSubview(toFront: imageSliderView)
         
         // Do any additional setup after loading the view.
         addBottomVC()
-
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.view.backgroundColor = UIColor.clear
         navigationController?.navigationBar.backgroundColor = UIColor.clear
-
+        
+        
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
 
-    }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

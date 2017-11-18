@@ -45,6 +45,7 @@
 		DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */; };
 		DCD61B1D1FC0534F00C64075 /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */; };
 		DCD61B1F1FC054F900C64075 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1E1FC054F900C64075 /* PopAnimator.swift */; };
+		DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCellView.swift; sourceTree = "<group>"; };
 		DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimator.swift; sourceTree = "<group>"; };
 		DCD61B1E1FC054F900C64075 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			children = (
 				DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */,
 				DC17BC251FB8DFEB0056035A /* AppDelegate.swift */,
+				DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */,
 				DC0019D71FBE055C00651835 /* UIImage+AspectFit.swift in Sources */,
 				DC0019D91FBE055C00651835 /* ZoomAnimatedTransitioning.swift in Sources */,
+				DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */,
 				DC7506441FBB7338007CF6A6 /* ItemViewCell.swift in Sources */,
 				DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,

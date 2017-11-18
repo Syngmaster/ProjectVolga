@@ -13,11 +13,11 @@ private let reuseIdentifier = "Cell"
 class ItemsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var navTitle:String?
-    var selectedCell:IndexPath?
+    var selectedCell:UICollectionViewCell?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let searchBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.search, target: self, action: #selector(searchAction(sender:)))
         searchBarButton.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = searchBarButton
@@ -28,6 +28,12 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         }
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
 
     }
     
@@ -71,11 +77,14 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
     
 
     // MARK: UICollectionViewDelegate
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! ItemViewCell
+        selectedCell = cell
+    }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedCell = indexPath
-        self.performSegue(withIdentifier: "details", sender: nil)
+        //selectedCell = indexPath
+        //self.performSegue(withIdentifier: "details", sender: nil)
         
     }
 

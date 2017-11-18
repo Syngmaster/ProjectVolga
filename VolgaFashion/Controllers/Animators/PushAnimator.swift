@@ -11,41 +11,52 @@ import UIKit
 class PushAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.5
+        return 0.7
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard
-            let toVC = transitionContext.viewController(forKey: .to),
-            let fromVC = transitionContext.viewController(forKey: .from) as? ItemsListViewController
+
+        guard let toView = transitionContext.view(forKey: .to)
             else { return }
         
-        let selectedCell = fromVC.collectionView?.cellForItem(at: fromVC.selectedCell!) as! ItemViewCell
+        let container = transitionContext.containerView
+        
+        guard
+            let fromVC = transitionContext.viewController(forKey: .from) as? ItemsListViewController,
+            let fromView = fromVC.collectionView,
+            let selectedCell = fromVC.selectedCell as? ItemViewCell
+            else { return }
+        
+        container.addSubview(toView)
+        let screenshotToView =  UIImageView(image: toView.screenshot)
+        screenshotToView.frame = selectedCell.frame
+        
+        let containerCoord = fromView.convert(screenshotToView.frame.origin, to: container)
+        screenshotToView.frame.origin = containerCoord
+        
+        let screenshotFromView = UIImageView(image: selectedCell.imageView.screenshot)
+        screenshotFromView.frame = screenshotToView.frame
+        
+        container.addSubview(screenshotToView)
+        container.addSubview(screenshotFromView)
+        
+        toView.isHidden = true
+        screenshotToView.isHidden = false
+
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             
-        if let snapshot = selectedCell.imageView.snapshotView(afterScreenUpdates: false) {
+            screenshotToView.frame = UIScreen.main.bounds
+            screenshotToView.frame.origin = CGPoint(x: 0.0, y: 0.0)
+            screenshotFromView.frame = screenshotToView.frame
             
-            snapshot.isUserInteractionEnabled = false
-            snapshot.layer.opacity = 1.0
-            snapshot.transform = CGAffineTransform.init(scaleX: 0.9, y: 0.9)
-            snapshot.center = CGPoint(x: selectedCell.center.x, y: selectedCell.center.y)
             
-            transitionContext.containerView.insertSubview(snapshot, aboveSubview: toVC.view)
+        }) { _ in
             
-            UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
-                snapshot.transform = CGAffineTransform.init(scaleX: 2.2, y: 2.2)
-                snapshot.center = CGPoint(x: toVC.view.center.x, y: toVC.view.center.y - 20)
-            }, completion: { (finished) in
-                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-                
-                UIView.animate(withDuration: 0.1, animations: {
-                    snapshot.alpha = 0.0
-                    snapshot.transform = CGAffineTransform.init(scaleX: 2.0, y: 2.0)
-                }, completion: { (finished) in
-                    snapshot.removeFromSuperview()
-                    transitionContext.containerView.insertSubview(toVC.view, aboveSubview: fromVC.view)
-                    
-                })
-            })
+            screenshotToView.removeFromSuperview()
+            screenshotFromView.removeFromSuperview()
+            toView.isHidden = false
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            
         }
     }
 }

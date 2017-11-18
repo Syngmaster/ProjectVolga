@@ -672,27 +672,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aAF-8c-dpJ">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="108" height="156"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="xUq-T5-fOy" customClass="ItemViewCell" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="74" y="0.0" width="227" height="351"/>
+                                <rect key="frame" x="0.0" y="0.0" width="108" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="108" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vI0-18-d8O" customClass="CustomItemCellView" customModule="VolgaFashion" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="227" height="287"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="108" height="28"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JA3-uI-qaS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="287"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JA3-uI-qaS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="108" height="28"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-fp-rTV" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="134.5" width="132" height="18"/>
+                                                    <rect key="frame" x="8" y="5" width="80" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="5mJ-LA-imu"/>
                                                     </constraints>
@@ -701,7 +701,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="out-qg-wNv" customClass="PriceLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="170" y="231" width="47" height="16"/>
+                                                    <rect key="frame" x="69" y="-28" width="29" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="XSb-bP-dOS"/>
                                                     </constraints>
@@ -710,7 +710,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-lr-A2Y">
-                                                    <rect key="frame" x="192" y="15" width="20" height="20"/>
+                                                    <rect key="frame" x="73" y="15" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="Kcu-lX-dh9"/>
                                                         <constraint firstAttribute="width" secondItem="dzp-lr-A2Y" secondAttribute="height" multiplier="1:1" id="YUV-lg-DEc"/>
@@ -746,12 +746,13 @@
                                     <constraint firstItem="vI0-18-d8O" firstAttribute="leading" secondItem="xUq-T5-fOy" secondAttribute="leading" id="gfp-GW-b9E"/>
                                     <constraint firstAttribute="trailing" secondItem="vI0-18-d8O" secondAttribute="trailing" id="wvB-EV-ekQ"/>
                                 </constraints>
-                                <size key="customSize" width="227" height="351"/>
+                                <size key="customSize" width="108" height="92"/>
                                 <connections>
                                     <outlet property="addToWishlistButton" destination="dzp-lr-A2Y" id="nnI-yQ-ht0"/>
                                     <outlet property="imageView" destination="JA3-uI-qaS" id="Xrg-Zi-pAb"/>
                                     <outlet property="itemNameLabel" destination="MCd-fp-rTV" id="1jh-RE-gQQ"/>
                                     <outlet property="priceLabel" destination="out-qg-wNv" id="Xpd-dt-xxD"/>
+                                    <segue destination="Q8z-85-Wb3" kind="show" identifier="details" id="Bvh-lZ-6ti"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -760,13 +761,10 @@
                             <outlet property="delegate" destination="YyN-Za-rbR" id="3Mw-OF-xCB"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <segue destination="Q8z-85-Wb3" kind="show" identifier="details" id="K6j-Jz-ETb"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSc-lt-WdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3220" y="-555"/>
+            <point key="canvasLocation" x="3220" y="-555.47226386806597"/>
         </scene>
         <!--Full Description View Controller-->
         <scene sceneID="2hz-Ui-RHJ">
@@ -1051,6 +1049,6 @@
         <image name="wishlist_icon" width="32" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u6t-98-9ad"/>
+        <segue reference="JVg-Qe-Zb2"/>
     </inferredMetricsTieBreakers>
 </document>
