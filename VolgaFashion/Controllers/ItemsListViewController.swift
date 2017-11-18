@@ -13,6 +13,7 @@ private let reuseIdentifier = "Cell"
 class ItemsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var navTitle:String?
+    var selectedCell:IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,8 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         }
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-    }
 
+    }
     
     @objc func searchAction(sender: UIBarButtonItem) {
         
@@ -73,7 +74,7 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        selectedCell = indexPath
         self.performSegue(withIdentifier: "details", sender: nil)
         
     }

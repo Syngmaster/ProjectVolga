@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ShopViewController: UIViewController {
+class ShopViewController: UIViewController, UINavigationControllerDelegate {
     var navTitle:String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.delegate = self
+        
         let imageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "logo_icon.png")
@@ -54,6 +56,22 @@ class ShopViewController: UIViewController {
             
         }
         
+    }
+    
+    // MARK: UINavigationControllerDelegate
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        if (fromVC.isMember(of: ItemDetailsViewController.self) || toVC.isMember(of: ItemDetailsViewController.self)) {
+            
+            if operation == .push {
+                return PushAnimator()
+            } else {
+                return PopAnimator()
+            }
+        } else {
+            return nil
+        }
     }
     
 }

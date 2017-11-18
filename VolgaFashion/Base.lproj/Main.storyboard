@@ -508,11 +508,11 @@
             <objects>
                 <viewController id="aag-AM-GAC" customClass="ShopViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5f6-PJ-qqB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-VN-E5n">
-                                <rect key="frame" x="0.0" y="64" width="375" height="464"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-so-5hK" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="464"/>
@@ -547,7 +547,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZs-v5-xFC" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="528" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="464" width="375" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Ont-wQ-TEd"/>
                                 </constraints>
@@ -593,7 +593,7 @@
             <objects>
                 <collectionViewController id="uqi-zT-XRO" customClass="CategoryViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="vCx-4w-dmg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="sUr-vG-rMc">
@@ -603,7 +603,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="NG8-n7-1Wu" customClass="CategoryViewCell" customModule="VolgaFashion" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="NG8-n7-1Wu" customClass="CategoryViewCell" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="75.5" y="0.0" width="224" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -611,13 +611,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJR-bC-dd0" customClass="CustomItemCellView" customModule="VolgaFashion" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="224" height="135"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HeA-Vn-7Zw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="224" height="199"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="224" height="135"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOTHING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-Zo-Ey3" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="145" width="108" height="24"/>
+                                                    <rect key="frame" x="10" y="81" width="108" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="1cn-M1-IN5"/>
                                                     </constraints>
@@ -668,7 +668,7 @@
             <objects>
                 <collectionViewController hidesBottomBarWhenPushed="YES" id="YyN-Za-rbR" customClass="ItemsListViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="g7h-Bv-fsk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aAF-8c-dpJ">
@@ -678,7 +678,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="xUq-T5-fOy" customClass="ItemViewCell" customModule="VolgaFashion" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="xUq-T5-fOy" customClass="ItemViewCell" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="74" y="0.0" width="227" height="351"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -686,13 +686,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vI0-18-d8O" customClass="CustomItemCellView" customModule="VolgaFashion" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="227" height="287"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JA3-uI-qaS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="351"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="227" height="287"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VINTAGE 80S JACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-fp-rTV" customClass="ItemTitleLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="166.5" width="132" height="18"/>
+                                                    <rect key="frame" x="8" y="134.5" width="132" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="5mJ-LA-imu"/>
                                                     </constraints>
@@ -701,7 +701,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="out-qg-wNv" customClass="PriceLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                                    <rect key="frame" x="170" y="295" width="47" height="16"/>
+                                                    <rect key="frame" x="170" y="231" width="47" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="XSb-bP-dOS"/>
                                                     </constraints>
@@ -915,11 +915,11 @@
             <objects>
                 <viewController storyboardIdentifier="ItemDetailsViewController" hidesBottomBarWhenPushed="YES" id="Q8z-85-Wb3" customClass="ItemDetailsViewController" customModule="VolgaFashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PMm-sr-dVl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E64-gi-bnG" customClass="ImageSlideshow" customModule="VolgaFashion" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="497"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -969,7 +969,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="21f-Jb-Exu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Shop" image="store_icon" selectedImage="store_icon" id="HMo-Mb-czc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zGE-R3-ZOh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zGE-R3-ZOh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

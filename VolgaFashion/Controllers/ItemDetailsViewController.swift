@@ -27,18 +27,37 @@ class ItemDetailsViewController: UIViewController {
         imageSliderView.contentScaleMode = .scaleToFill
         view.bringSubview(toFront: imageSliderView)
         
+        // Do any additional setup after loading the view.
+        addBottomVC()
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
-        
-        // Do any additional setup after loading the view.
-        addBottomVC()
-        
-    }
+        navigationController?.view.backgroundColor = UIColor.clear
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
 
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.backgroundColor = UIColor(red: (255.0 / 255.0), green: (255.0 / 255.0), blue: (255.0 / 255.0), alpha: 1)
+
+
+    }
+
+    
     func addBottomVC() {
         if let bottomVC = storyboard?.instantiateViewController(withIdentifier: "FullDescriptionViewController") {
             addChildViewController(bottomVC)

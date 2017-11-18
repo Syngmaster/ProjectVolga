@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */; };
-		DC0019351FBCA99D00651835 /* ManagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019341FBCA99D00651835 /* ManagePageViewController.swift */; };
 		DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */; };
 		DC0019971FBCD48800651835 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC0019961FBCD48800651835 /* Info.plist */; };
 		DC0019991FBDEE3E00651835 /* BottomButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019981FBDEE3E00651835 /* BottomButtonsViewController.swift */; };
@@ -44,11 +43,12 @@
 		DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */; };
 		DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */; };
 		DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */; };
+		DCD61B1D1FC0534F00C64075 /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */; };
+		DCD61B1F1FC054F900C64075 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1E1FC054F900C64075 /* PopAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
-		DC0019341FBCA99D00651835 /* ManagePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePageViewController.swift; sourceTree = "<group>"; };
 		DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDescriptionViewController.swift; sourceTree = "<group>"; };
 		DC0019951FBCD48800651835 /* ImageSlideshow_framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSlideshow_framework.h; sourceTree = "<group>"; };
 		DC0019961FBCD48800651835 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTitleLabel.swift; sourceTree = "<group>"; };
 		DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
 		DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCellView.swift; sourceTree = "<group>"; };
+		DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimator.swift; sourceTree = "<group>"; };
+		DCD61B1E1FC054F900C64075 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		DC17BC3E1FB9B9C90056035A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DCD61B1B1FC0531D00C64075 /* Animators */,
 				DC17BC441FB9BA4E0056035A /* ShopViewController.swift */,
 				DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */,
 				DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */,
@@ -180,7 +183,6 @@
 				DC09032B1FBB69A700CD04C1 /* NewAccountViewController.swift */,
 				DC09032D1FBB6F4B00CD04C1 /* ItemsListViewController.swift */,
 				DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */,
-				DC0019341FBCA99D00651835 /* ManagePageViewController.swift */,
 				DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */,
 				DC0019981FBDEE3E00651835 /* BottomButtonsViewController.swift */,
 				DC0019DA1FBE0EBB00651835 /* CategoryViewController.swift */,
@@ -218,6 +220,15 @@
 				DC17BC251FB8DFEB0056035A /* AppDelegate.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DCD61B1B1FC0531D00C64075 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				DCD61B1C1FC0534F00C64075 /* PushAnimator.swift */,
+				DCD61B1E1FC054F900C64075 /* PopAnimator.swift */,
+			);
+			path = Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				DC0019D31FBE055C00651835 /* FullScreenSlideshowViewController.swift in Sources */,
 				DC0019DB1FBE0EBB00651835 /* CategoryViewController.swift in Sources */,
 				DC17BC511FB9FFC70056035A /* SignInViewController.swift in Sources */,
+				DCD61B1D1FC0534F00C64075 /* PushAnimator.swift in Sources */,
 				DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */,
 				DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */,
 				DC0019D71FBE055C00651835 /* UIImage+AspectFit.swift in Sources */,
@@ -316,6 +328,7 @@
 				DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
 				DC17BC551FBA05FE0056035A /* CustomNavView.swift in Sources */,
+				DCD61B1F1FC054F900C64075 /* PopAnimator.swift in Sources */,
 				DC17BC2E1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld in Sources */,
 				DC0019D61FBE055C00651835 /* InputSource.swift in Sources */,
 				DC09032E1FBB6F4B00CD04C1 /* ItemsListViewController.swift in Sources */,
@@ -325,7 +338,6 @@
 				DC0019991FBDEE3E00651835 /* BottomButtonsViewController.swift in Sources */,
 				DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */,
 				DC09032C1FBB69A700CD04C1 /* NewAccountViewController.swift in Sources */,
-				DC0019351FBCA99D00651835 /* ManagePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
