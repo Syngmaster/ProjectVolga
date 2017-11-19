@@ -69,9 +69,10 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             
+            screenshotFromView.alpha = 0.0
             screenshotToView.frame = UIScreen.main.bounds
             screenshotToView.frame.origin = CGPoint(x: 0.0, y: 0.0)
-            screenshotFromView.frame = screenshotToView.frame
+            screenshotFromView.frame = CGRect(x: screenshotToView.frame.minX, y: screenshotToView.frame.minY, width: screenshotToView.frame.width, height: screenshotToView.frame.height - 170)
             fromVC.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
             fromVC.navigationController?.navigationBar.shadowImage = UIImage()
             fromVC.navigationController?.navigationBar.isTranslucent = true
