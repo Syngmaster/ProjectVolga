@@ -31,12 +31,6 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-
-    }
-    
     @objc func searchAction(sender: UIBarButtonItem) {
         
     }

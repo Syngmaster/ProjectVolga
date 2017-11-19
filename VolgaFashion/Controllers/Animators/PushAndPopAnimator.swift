@@ -44,6 +44,10 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             let selectedCell = fromVC.selectedCell as? ItemViewCell
             else { return }
         
+        fromVC.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        fromVC.navigationController?.navigationBar.shadowImage = nil
+        fromVC.navigationController?.navigationBar.isTranslucent = true
+        
         container.addSubview(toView)
         let screenshotToView =  UIImageView(image: toView.screenshot)
         screenshotToView.frame = selectedCell.frame
@@ -53,6 +57,9 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         let screenshotFromView = UIImageView(image: selectedCell.imageView.screenshot)
         screenshotFromView.frame = screenshotToView.frame
+        
+        print(selectedCell.frame)
+        print(screenshotFromView.frame)
         
         container.addSubview(screenshotToView)
         container.addSubview(screenshotFromView)
@@ -65,9 +72,13 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             screenshotToView.frame = UIScreen.main.bounds
             screenshotToView.frame.origin = CGPoint(x: 0.0, y: 0.0)
             screenshotFromView.frame = screenshotToView.frame
-            
+            fromVC.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            fromVC.navigationController?.navigationBar.shadowImage = UIImage()
+            fromVC.navigationController?.navigationBar.isTranslucent = true
             
         }) { _ in
+            
+
             
             screenshotToView.removeFromSuperview()
             screenshotFromView.removeFromSuperview()
@@ -103,11 +114,11 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         container.addSubview(toView)
         
         // Prepare the screenshot of the source view for animation
-        let screenshotFromView = fromView.snapshotView(afterScreenUpdates: false)!
+        let screenshotFromView = UIImageView(image:fromView.screenshot)
         screenshotFromView.frame = fromView.frame
         
         // Prepare the screenshot of the destination view for animation
-        let screenshotToView = selectedCell.snapshotView(afterScreenUpdates: false)!
+        let screenshotToView = UIImageView(image:selectedCell.screenshot)
         screenshotToView.frame = screenshotFromView.frame
         
         // Add screenshots to transition container to set-up the animation
@@ -119,6 +130,7 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         fromView.isHidden = true
         selectedCell.isHidden = true
         
+
         let containerCoord = toCollectionView.convert(selectedCell.frame.origin, to: container)
         
         UIView.animate(withDuration:self.transitionDuration(using: transitionContext), delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0, options: [], animations: { () -> Void in
@@ -127,7 +139,11 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             screenshotFromView.frame = selectedCell.frame
             screenshotFromView.frame.origin = containerCoord
             screenshotToView.frame = screenshotFromView.frame
-            
+
+            toViewController.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+            toViewController.navigationController?.navigationBar.shadowImage = nil
+            toViewController.navigationController?.navigationBar.isTranslucent = true
+
         }) { _ in
             
             selectedCell.isHidden = false
