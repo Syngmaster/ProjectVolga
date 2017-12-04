@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5FBB6A881034FB72C523FA /* Pods_VolgaFashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ADE6AD7BB9C281492D06C8 /* Pods_VolgaFashion.framework */; };
 		DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */; };
 		DC0019371FBCC03100651835 /* FullDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */; };
 		DC0019971FBCD48800651835 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC0019961FBCD48800651835 /* Info.plist */; };
@@ -43,11 +44,14 @@
 		DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */; };
 		DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */; };
 		DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */; };
+		DCB03CB31FD57038001091BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB03CB21FD57038001091BA /* GoogleService-Info.plist */; };
+		DCB03CB51FD5CF6A001091BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB03CB41FD5CF6A001091BA /* DataManager.swift */; };
 		DCD61B1D1FC0534F00C64075 /* PushAndPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */; };
 		DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B84BAC4AD208DBB22A758B8 /* Pods-VolgaFashion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolgaFashion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0019321FBC8EEC00651835 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		DC0019361FBCC03100651835 /* FullDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDescriptionViewController.swift; sourceTree = "<group>"; };
 		DC0019951FBCD48800651835 /* ImageSlideshow_framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSlideshow_framework.h; sourceTree = "<group>"; };
@@ -87,8 +91,12 @@
 		DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTitleLabel.swift; sourceTree = "<group>"; };
 		DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
 		DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCellView.swift; sourceTree = "<group>"; };
+		DCB03CB21FD57038001091BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCB03CB41FD5CF6A001091BA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAndPopAnimator.swift; sourceTree = "<group>"; };
 		DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
+		E1F8E91F98D0D1BFA3451CA8 /* Pods-VolgaFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolgaFashion.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion.release.xcconfig"; sourceTree = "<group>"; };
+		E9ADE6AD7BB9C281492D06C8 /* Pods_VolgaFashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VolgaFashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +104,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5FBB6A881034FB72C523FA /* Pods_VolgaFashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5A43779CD9D25E917B6F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9ADE6AD7BB9C281492D06C8 /* Pods_VolgaFashion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7242151B41413857C2132441 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B84BAC4AD208DBB22A758B8 /* Pods-VolgaFashion.debug.xcconfig */,
+				E1F8E91F98D0D1BFA3451CA8 /* Pods-VolgaFashion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC00196D1FBCD47300651835 /* ImageSlideshow */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +170,8 @@
 				DC17BC231FB8DFEB0056035A /* Products */,
 				DC00196D1FBCD47300651835 /* ImageSlideshow */,
 				DC0019941FBCD48800651835 /* ImageSlideshow_framework */,
+				7242151B41413857C2132441 /* Pods */,
+				2B5A43779CD9D25E917B6F26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +186,7 @@
 		DC17BC241FB8DFEB0056035A /* VolgaFashion */ = {
 			isa = PBXGroup;
 			children = (
+				DC17BC341FB8DFEB0056035A /* Info.plist */,
 				DC17BC411FB9B9E50056035A /* SupportFiles */,
 				DC17BC401FB9B9DF0056035A /* Views */,
 				DC17BC3F1FB9B9D80056035A /* Models */,
@@ -165,8 +194,6 @@
 				DC17BC291FB8DFEB0056035A /* Main.storyboard */,
 				DC17BC2F1FB8DFEB0056035A /* Assets.xcassets */,
 				DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */,
-				DC17BC341FB8DFEB0056035A /* Info.plist */,
-				DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */,
 			);
 			path = VolgaFashion;
 			sourceTree = "<group>";
@@ -193,6 +220,7 @@
 		DC17BC3F1FB9B9D80056035A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DCB03CB41FD5CF6A001091BA /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +244,8 @@
 		DC17BC411FB9B9E50056035A /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DC17BC2C1FB8DFEB0056035A /* VolgaFashion.xcdatamodeld */,
+				DCB03CB21FD57038001091BA /* GoogleService-Info.plist */,
 				DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */,
 				DC17BC251FB8DFEB0056035A /* AppDelegate.swift */,
 				DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */,
@@ -238,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC17BC371FB8DFEB0056035A /* Build configuration list for PBXNativeTarget "VolgaFashion" */;
 			buildPhases = (
+				E6EA75F4F0E763BA7B48ECCB /* [CP] Check Pods Manifest.lock */,
 				DC17BC1E1FB8DFEB0056035A /* Sources */,
 				DC17BC1F1FB8DFEB0056035A /* Frameworks */,
 				DC17BC201FB8DFEB0056035A /* Resources */,
+				8AAEA8DA0927417DD7409F52 /* [CP] Embed Pods Frameworks */,
+				B8B1FECE2016476C7E80E0F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,10 +329,59 @@
 				DC0019D11FBE055C00651835 /* .gitkeep in Resources */,
 				DC17BC301FB8DFEB0056035A /* Assets.xcassets in Resources */,
 				DC17BC2B1FB8DFEB0056035A /* Main.storyboard in Resources */,
+				DCB03CB31FD57038001091BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AAEA8DA0927417DD7409F52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8B1FECE2016476C7E80E0F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6EA75F4F0E763BA7B48ECCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC17BC1E1FB8DFEB0056035A /* Sources */ = {
@@ -325,6 +407,7 @@
 				DC0019D71FBE055C00651835 /* UIImage+AspectFit.swift in Sources */,
 				DC0019D91FBE055C00651835 /* ZoomAnimatedTransitioning.swift in Sources */,
 				DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */,
+				DCB03CB51FD5CF6A001091BA /* DataManager.swift in Sources */,
 				DC7506441FBB7338007CF6A6 /* ItemViewCell.swift in Sources */,
 				DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
@@ -472,6 +555,7 @@
 		};
 		DC17BC381FB8DFEB0056035A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B84BAC4AD208DBB22A758B8 /* Pods-VolgaFashion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +572,7 @@
 		};
 		DC17BC391FB8DFEB0056035A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F8E91F98D0D1BFA3451CA8 /* Pods-VolgaFashion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

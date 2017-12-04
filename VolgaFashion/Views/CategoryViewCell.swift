@@ -12,4 +12,11 @@ class CategoryViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    func configureCell(row: Int) {
+        
+        self.imageView.image = UIImage(named:"1448.jpg")
+
+        
+    }
+    
 }

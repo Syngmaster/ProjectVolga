@@ -6,6 +6,6 @@ target 'VolgaFashion' do
   use_frameworks!
 
   # Pods for VolgaFashion
-   pod 'ImageSlideshow', '~> 1.4'
+   pod 'Firebase/Core'
 
 end
