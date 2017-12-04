@@ -32,7 +32,7 @@
 		DC17BC331FB8DFEB0056035A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC311FB8DFEB0056035A /* LaunchScreen.storyboard */; };
 		DC17BC3D1FB8E9D80056035A /* Gotham Book Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */; };
 		DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC441FB9BA4E0056035A /* ShopViewController.swift */; };
-		DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC481FB9D0130056035A /* CategoryButton.swift */; };
+		DC17BC491FB9D0130056035A /* CustomSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC481FB9D0130056035A /* CustomSimpleButton.swift */; };
 		DC17BC4B1FB9ED130056035A /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */; };
 		DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4C1FB9EE890056035A /* CustomButton.swift */; };
 		DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */; };
@@ -76,7 +76,7 @@
 		DC17BC341FB8DFEB0056035A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC17BC3C1FB8E9D80056035A /* Gotham Book Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Book Regular.otf"; sourceTree = "<group>"; };
 		DC17BC441FB9BA4E0056035A /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		DC17BC481FB9D0130056035A /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		DC17BC481FB9D0130056035A /* CustomSimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSimpleButton.swift; sourceTree = "<group>"; };
 		DC17BC4A1FB9ED130056035A /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		DC17BC4C1FB9EE890056035A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		DC17BC4E1FB9F5EB0056035A /* MyBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 		DC17BC401FB9B9DF0056035A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DC17BC481FB9D0130056035A /* CategoryButton.swift */,
+				DC17BC481FB9D0130056035A /* CustomSimpleButton.swift */,
 				DC17BC4C1FB9EE890056035A /* CustomButton.swift */,
 				DC17BC541FBA05FE0056035A /* CustomNavView.swift */,
 				DC0903291FBB683600CD04C1 /* DividerLabel.swift */,
@@ -314,7 +314,7 @@
 				DC0019DD1FBE107A00651835 /* CategoryViewCell.swift in Sources */,
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */,
-				DC17BC491FB9D0130056035A /* CategoryButton.swift in Sources */,
+				DC17BC491FB9D0130056035A /* CustomSimpleButton.swift in Sources */,
 				DC17BC4D1FB9EE890056035A /* CustomButton.swift in Sources */,
 				DC0019D31FBE055C00651835 /* FullScreenSlideshowViewController.swift in Sources */,
 				DC0019DB1FBE0EBB00651835 /* CategoryViewController.swift in Sources */,

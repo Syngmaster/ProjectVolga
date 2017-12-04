@@ -107,7 +107,7 @@
                                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-rz-pem" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-rz-pem" customClass="CustomSimpleButton" customModule="VolgaFashion" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="100.5" width="300" height="45"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -166,7 +166,7 @@
                                     <constraint firstAttribute="trailing" secondItem="fdk-pb-pl2" secondAttribute="trailing" constant="15" id="zrb-V5-kdn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-o2-NMl" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAI-o2-NMl" customClass="CustomSimpleButton" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="602" width="300" height="45"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -209,17 +209,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6Yj-gd-D2f">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Yj-gd-D2f">
                                 <rect key="frame" x="0.0" y="94.5" width="0.0" height="492.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-g8-zOj">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="68.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="65.5"/>
                                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-15-xvS">
-                                        <rect key="frame" x="0.0" y="77.5" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="75.5" width="0.0" height="0.0"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deE-tu-3rR">
                                                 <constraints>
@@ -238,11 +238,11 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-6L-H9L">
-                                        <rect key="frame" x="0.0" y="228.5" width="0.0" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="227.5" width="0.0" height="19.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvC-4g-6Is" customClass="DividerLabel" customModule="VolgaFashion" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="258" width="0.0" height="16"/>
+                                        <rect key="frame" x="0.0" y="257" width="0.0" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="fWJ-Ao-XNs"/>
                                         </constraints>
@@ -251,7 +251,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nd-Yg-UXF">
-                                        <rect key="frame" x="0.0" y="283" width="0.0" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="283" width="0.0" height="19.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-t2-8lK">
@@ -333,7 +333,7 @@
                                     <constraint firstAttribute="height" constant="64" id="wDg-jW-GMV"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-zb-eu8" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-zb-eu8" customClass="CustomSimpleButton" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="602" width="0.0" height="45"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -404,7 +404,7 @@
                                     <constraint firstAttribute="width" secondItem="vq0-XC-Kfp" secondAttribute="height" multiplier="1:1" id="JpI-Iv-sD7"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-bQ-Jhn" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-bQ-Jhn" customClass="CustomSimpleButton" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="23" y="548" width="329" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KP7-Yo-NpF"/>
@@ -450,7 +450,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-p8-7F0" customClass="CustomButton" customModule="VolgaFashion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-p8-7F0" customClass="CustomSimpleButton" customModule="VolgaFashion" customModuleProvider="target">
                                 <rect key="frame" x="22.5" y="548" width="330" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NNw-lt-too"/>
