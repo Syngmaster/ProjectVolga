@@ -7,5 +7,7 @@ target 'VolgaFashion' do
 
   # Pods for VolgaFashion
    pod 'Firebase/Core'
+   pod 'Firebase/Database'
+
 
 end

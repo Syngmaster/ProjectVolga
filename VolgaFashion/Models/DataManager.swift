@@ -10,4 +10,12 @@ import Foundation
 
 class DataManager {
     
+    static var sharedInstance = DataManager()
+    
+    func downloadCategories(completion: @escaping (Int) -> ()) {
+        
+        completion(5)
+        
+    }
+    
 }
