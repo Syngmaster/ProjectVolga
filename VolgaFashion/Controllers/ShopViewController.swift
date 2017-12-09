@@ -29,11 +29,7 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
         navigationController?.navigationBar.backIndicatorImage = backButton
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
         
-        DataManager.sharedInstance.downloadCategories {finished in
-            
-            print(finished)
-            
-        }
+
         
         
     }

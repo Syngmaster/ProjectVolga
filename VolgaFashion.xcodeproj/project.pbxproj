@@ -46,6 +46,7 @@
 		DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */; };
 		DCB03CB31FD57038001091BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB03CB21FD57038001091BA /* GoogleService-Info.plist */; };
 		DCB03CB51FD5CF6A001091BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB03CB41FD5CF6A001091BA /* DataManager.swift */; };
+		DCB03CB71FD73DA8001091BA /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB03CB61FD73DA8001091BA /* CategoryModel.swift */; };
 		DCD61B1D1FC0534F00C64075 /* PushAndPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */; };
 		DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemCellView.swift; sourceTree = "<group>"; };
 		DCB03CB21FD57038001091BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCB03CB41FD5CF6A001091BA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DCB03CB61FD73DA8001091BA /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAndPopAnimator.swift; sourceTree = "<group>"; };
 		DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
 		E1F8E91F98D0D1BFA3451CA8 /* Pods-VolgaFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolgaFashion.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,9 +135,8 @@
 			children = (
 				DC0019C71FBE055C00651835 /* Classes */,
 			);
-			name = ImageSlideshow;
-			path = "../../../../../../Downloads/ImageSlideshow-1.4.1/ImageSlideshow";
-			sourceTree = "<group>";
+			path = ImageSlideshow;
+			sourceTree = SOURCE_ROOT;
 		};
 		DC0019941FBCD48800651835 /* ImageSlideshow_framework */ = {
 			isa = PBXGroup;
@@ -221,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				DCB03CB41FD5CF6A001091BA /* DataManager.swift */,
+				DCB03CB61FD73DA8001091BA /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +411,7 @@
 				DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */,
 				DCB03CB51FD5CF6A001091BA /* DataManager.swift in Sources */,
 				DC7506441FBB7338007CF6A6 /* ItemViewCell.swift in Sources */,
+				DCB03CB71FD73DA8001091BA /* CategoryModel.swift in Sources */,
 				DC75064A1FBC6D8B007CF6A6 /* CustomItemCellView.swift in Sources */,
 				DC17BC261FB8DFEB0056035A /* AppDelegate.swift in Sources */,
 				DC17BC551FBA05FE0056035A /* CustomNavView.swift in Sources */,

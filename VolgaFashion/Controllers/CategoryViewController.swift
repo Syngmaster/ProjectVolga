@@ -13,6 +13,7 @@ private let reuseIdentifier = "Cell"
 class CategoryViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var navTitle:String?
+    var arrayOfCategories = [Any]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,7 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return arrayOfCategories.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -69,7 +70,7 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
         case 5: return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/2)
 
         default:
-            return .zero
+            return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
         }
         
     }
