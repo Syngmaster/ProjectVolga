@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class CategoryViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var categoryLabel: ItemTitleLabel!
     
-    func configureCell(row: Int) {
+    func configureCell(category: Category, row: Int) {
+    
+        categoryLabel.text = category.categoryTitle
         
-        self.imageView.image = UIImage(named:"1448.jpg")
-
+        let storage = FIRStorage.storage()
+        let imageRef = storage.reference(forURL: category.categoryPhoto)
+        
+        imageRef.data(withMaxSize: 1*2048*2048) { (data, error) in
+            
+            if let data = data {
+                let image = UIImage(data:data)
+                self.imageView.image = image
+            }
+            
+        }
         
     }
     

@@ -27,6 +27,12 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
+        
+        DataManager.sharedInstance.downloadCategories { (array) in
+            self.arrayOfCategories = array
+            self.collectionView?.reloadData()
+        }
+        
     }
 
 
@@ -53,25 +59,22 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CategoryViewCell
         
-        cell.configureCell(row: indexPath.row)
+        let category = arrayOfCategories[indexPath.row] as! Category
+        
+        cell.configureCell(category: category, row: indexPath.row)
 
         return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        switch indexPath.row {
-            
-        case 0: return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
-        case 1: return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
-        case 2: return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/2)
-        case 3: return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
-        case 4: return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
-        case 5: return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/2)
-
-        default:
-            return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2)
-        }
+        var cellSize:CGSize = .zero
+        
+        indexPath.row%3 == 0 ?
+            (cellSize =  CGSize(width: collectionView.frame.width, height: collectionView.frame.height/2)) :
+            (cellSize = CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2))
+        
+        return cellSize
         
     }
 
@@ -79,15 +82,17 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        self.performSegue(withIdentifier: "list", sender: nil)
+        let category = arrayOfCategories[indexPath.row]
+        self.performSegue(withIdentifier: "list", sender: category)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "list" {
             let dvc = segue.destination as! ItemsListViewController
-            dvc.navTitle = "CLOTHING"
+            let sender = sender as! Category
+            dvc.navTitle = sender.categoryTitle
         }
     }
 

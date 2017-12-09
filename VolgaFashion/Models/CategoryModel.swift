@@ -11,12 +11,11 @@ import UIKit
 class Category {
     
     var categoryTitle: String
-    var categoryPhoto: UIImage
+    var categoryPhoto: String
     
-    init(photoURL: String, title: String) {
+    init(photo: String, title: String) {
         categoryTitle = title
-        categoryPhoto = photoURL
-        
+        categoryPhoto = photo
         }
 
 

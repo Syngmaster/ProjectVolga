@@ -6,8 +6,9 @@
 //  Copyright © 2017 Syngmaster. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 
 class DataManager {
@@ -26,15 +27,12 @@ class DataManager {
             var newArray = [Category]()
             for dict in resultArray {
                 let dict = dict as! NSDictionary
-                let category = Category.init(photoURL: dict.value(forKey: "photo") as! String, title: dict.value(forKey: "title") as! String)
+                let category = Category.init(photo: dict.value(forKey: "photo") as! String, title: dict.value(forKey: "title") as! String)
                 newArray.append(category)
-            }
-            
-            completion(newArray)
 
+            }
+            completion(newArray)
         }
-        
-        
     }
     
 }
