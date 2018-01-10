@@ -7,23 +7,27 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class ItemDetailsViewController: UIViewController {
 
+    var selectedItem:ItemModel!
+    var imageArray:[UIImage]!
 
     @IBOutlet weak var imageSliderView: ImageSlideshow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageSliderView.setImageInputs([
-            ImageSource(image:UIImage(named:"002.png")!),
-            ImageSource(image:UIImage(named:"004.png")!),
-            ImageSource(image:UIImage(named:"005.png")!),
-            ImageSource(image:UIImage(named:"006.png")!),
-            ImageSource(image:UIImage(named:"007.png")!)
+        imageArray = [UIImage]()
+        
+        DispatchQueue.global(qos: .background).async {
             
-            ])
+            for photoURL in self.selectedItem.photoArray {
+                self.loadImages(photoURL: photoURL)
+            }
+        }
+
         imageSliderView.contentScaleMode = .scaleAspectFill
         view.bringSubview(toFront: imageSliderView)
         
@@ -35,6 +39,35 @@ class ItemDetailsViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
 
     }
+    
+    func loadImages(photoURL: String) {
+        
+        let storage = FIRStorage.storage()
+        let imageRef = storage.reference(forURL: photoURL)
+        
+        imageRef.data(withMaxSize: 1*2048*2048) { (data, error) in
+            
+            if let data = data {
+                let image = UIImage(data:data)
+                self.imageArray.append(image!)
+                print("image downloaded")
+                
+                if self.imageArray.count == 5 {
+                    self.setSliderView(images: self.imageArray)
+                }
+            }
+        }
+    }
+    
+    func setSliderView(images: [UIImage]) {
+        self.imageSliderView.setImageInputs([
+            ImageSource(image:images[0]),
+            ImageSource(image:images[1]),
+            ImageSource(image:images[2]),
+            ImageSource(image:images[3]),
+            ImageSource(image:images[4])
+            ])
+    }
 
     
     func addBottomVC() {
@@ -44,7 +77,6 @@ class ItemDetailsViewController: UIViewController {
             bottomVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: view.frame.height)
             
             view.addSubview(bottomVC.view)
-            //view.bringSubview(toFront: bottomVC.view)
         }
         
         if let buttonsVC = storyboard?.instantiateViewController(withIdentifier: "BottomButtonsViewController") {
@@ -61,16 +93,6 @@ class ItemDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

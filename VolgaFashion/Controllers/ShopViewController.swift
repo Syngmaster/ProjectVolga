@@ -9,7 +9,10 @@
 import UIKit
 
 class ShopViewController: UIViewController, UINavigationControllerDelegate {
+    
     var navTitle:String?
+    var category:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,7 +58,6 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
         if segue.identifier == "category" {
             let dvc = segue.destination as! CategoryViewController
             dvc.navTitle = navTitle
-            
         }
         
     }

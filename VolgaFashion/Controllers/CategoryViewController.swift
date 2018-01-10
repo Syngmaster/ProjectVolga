@@ -13,6 +13,7 @@ private let reuseIdentifier = "Cell"
 class CategoryViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var navTitle:String?
+    var category:String?
     var arrayOfCategories = [Any]()
     
     override func viewDidLoad() {
@@ -27,7 +28,6 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
-        
         DataManager.sharedInstance.downloadCategories { (array) in
             self.arrayOfCategories = array
             self.collectionView?.reloadData()
@@ -39,18 +39,8 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
     @objc func searchAction(sender: UIBarButtonItem) {
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfCategories.count
@@ -80,8 +70,8 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
 
     // MARK: UICollectionViewDelegate
     
-    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let category = arrayOfCategories[indexPath.row]
         self.performSegue(withIdentifier: "list", sender: category)
         
@@ -95,27 +85,5 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
             dvc.navTitle = sender.categoryTitle
         }
     }
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 
 }

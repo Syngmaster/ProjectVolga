@@ -21,15 +21,31 @@ class CategoryViewCell: UICollectionViewCell {
         let storage = FIRStorage.storage()
         let imageRef = storage.reference(forURL: category.categoryPhoto)
         
-        imageRef.data(withMaxSize: 1*2048*2048) { (data, error) in
-            
+        imageRef.data(withMaxSize: 1*1024*1024) { (data, error) in
+
             if let data = data {
                 let image = UIImage(data:data)
                 self.imageView.image = image
             }
-            
+
         }
         
     }
+    
+//    func loadFromURL(url: URL, callback: @escaping (UIImage)->()) {
+//
+//        DispatchQueue.global(qos: .background).async { () -> Void in
+//
+//            let imageData = NSData(contentsOf: url as URL)
+//            if let data = imageData {
+//
+//                DispatchQueue.main.async { () -> Void in
+//                    if let image = UIImage(data: data as Data) {
+//                        callback(image)
+//                    }
+//                }
+//            }
+//        }
+//    }
     
 }

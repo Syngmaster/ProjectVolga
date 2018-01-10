@@ -40,8 +40,8 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         guard
             let fromVC = transitionContext.viewController(forKey: .from) as? ItemsListViewController,
-            let fromView = fromVC.collectionView,
-            let selectedCell = fromVC.selectedCell as? ItemViewCell
+            let selectedCell = fromVC.selectedCell as? ItemViewCell,
+            let fromView = fromVC.collectionView
             else { return }
         
         fromVC.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
@@ -78,9 +78,7 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             fromVC.navigationController?.navigationBar.isTranslucent = true
             
         }) { _ in
-            
 
-            
             screenshotToView.removeFromSuperview()
             screenshotFromView.removeFromSuperview()
             toView.isHidden = false

@@ -47,6 +47,7 @@
 		DCB03CB31FD57038001091BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB03CB21FD57038001091BA /* GoogleService-Info.plist */; };
 		DCB03CB51FD5CF6A001091BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB03CB41FD5CF6A001091BA /* DataManager.swift */; };
 		DCB03CB71FD73DA8001091BA /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB03CB61FD73DA8001091BA /* CategoryModel.swift */; };
+		DCC0B94D1FDDAD8300257EE7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC0B94C1FDDAD8300257EE7 /* ItemModel.swift */; };
 		DCD61B1D1FC0534F00C64075 /* PushAndPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */; };
 		DCD61B211FC0A89500C64075 /* UIView+Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		DCB03CB21FD57038001091BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCB03CB41FD5CF6A001091BA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DCB03CB61FD73DA8001091BA /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		DCC0B94C1FDDAD8300257EE7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		DCD61B1C1FC0534F00C64075 /* PushAndPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAndPopAnimator.swift; sourceTree = "<group>"; };
 		DCD61B201FC0A89500C64075 /* UIView+Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Screenshot.swift"; sourceTree = "<group>"; };
 		E1F8E91F98D0D1BFA3451CA8 /* Pods-VolgaFashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolgaFashion.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolgaFashion/Pods-VolgaFashion.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				DCB03CB41FD5CF6A001091BA /* DataManager.swift */,
 				DCB03CB61FD73DA8001091BA /* CategoryModel.swift */,
+				DCC0B94C1FDDAD8300257EE7 /* ItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				DC0019D81FBE055C00651835 /* UIImageView+Tools.swift in Sources */,
 				DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */,
 				DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */,
+				DCC0B94D1FDDAD8300257EE7 /* ItemModel.swift in Sources */,
 				DC0019DD1FBE107A00651835 /* CategoryViewCell.swift in Sources */,
 				DC17BC451FB9BA4E0056035A /* ShopViewController.swift in Sources */,
 				DC09032A1FBB683600CD04C1 /* DividerLabel.swift in Sources */,
