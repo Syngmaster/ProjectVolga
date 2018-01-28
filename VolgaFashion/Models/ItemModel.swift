@@ -24,7 +24,6 @@ class ItemModel {
         itemPrice = dict.value(forKey: "price") as! Int
         itemName = dict.value(forKey: "itemName") as! String
         itemDescription = dict.value(forKey: "description") as! String
-        subcategory = dict.value(forKey: "subcategory") as! String
         
         let newArray = dict.value(forKey: "photos") as! NSDictionary
         photoArray = newArray.allValues as! [String]

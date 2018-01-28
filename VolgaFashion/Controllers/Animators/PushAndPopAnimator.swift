@@ -58,9 +58,6 @@ class PushAndPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let screenshotFromView = UIImageView(image: selectedCell.imageView.screenshot)
         screenshotFromView.frame = screenshotToView.frame
         
-        print(selectedCell.frame)
-        print(screenshotFromView.frame)
-        
         container.addSubview(screenshotToView)
         container.addSubview(screenshotFromView)
         

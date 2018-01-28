@@ -9,11 +9,16 @@
 import UIKit
 
 class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelegate {
-
-    @IBOutlet weak var animatableLabel: UILabel!
+    
+    @IBOutlet weak var itemDescriptionLabel: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemPriceLabel: UILabel!
+    
     var maxPosition:CGFloat = 20.0
     var minPosition:CGFloat = UIScreen.main.bounds.height - 170
-    var progress: CGFloat = 0.0
+    var progress:CGFloat = 0.0
+    var selectedItem:ItemModel!
+    var superVC:ItemDetailsViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,12 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
         let pan = UIPanGestureRecognizer.init(target: self, action: #selector(panGesture(sender:)))
         pan.delegate = self
         view.addGestureRecognizer(pan)
+        
+        superVC = self.parent as! ItemDetailsViewController
+        
+        itemPriceLabel.text = "\(superVC.selectedItem.itemPrice!) EUR"
+        itemNameLabel.text = superVC.selectedItem.itemName
+        itemDescriptionLabel.text = superVC.selectedItem.itemDescription!
 
         // Do any additional setup after loading the view.
     }
@@ -86,13 +97,13 @@ class FullDescriptionViewController: UIViewController, UIGestureRecognizerDelega
             })
             if view.frame.origin.y <= 20.0 {
                 UIView.animate(withDuration: 0.4, animations: {
-                    parentVC.navigationItem.title = "VINTAGE 80S JACKET"
-                    self.animatableLabel.alpha = 0.0
+                    parentVC.navigationItem.title = self.superVC.selectedItem.itemName
+                    self.itemNameLabel.alpha = 0.0
                 })
             } else {
                 UIView.animate(withDuration: 0.4, animations: {
                     parentVC.navigationItem.title = ""
-                    self.animatableLabel.alpha = 1.0
+                    self.itemNameLabel.alpha = 1.0
                 })
             }
 

@@ -32,9 +32,6 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
         navigationController?.navigationBar.backIndicatorImage = backButton
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
         
-
-        
-        
     }
 
     @IBAction func selectCategoryAction(_ sender: UIButton) {

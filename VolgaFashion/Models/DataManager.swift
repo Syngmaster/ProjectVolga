@@ -15,22 +15,23 @@ class DataManager {
     
     static var sharedInstance = DataManager()
     
-    func downloadCategories(completion: @escaping (Array<Any>) -> ()) {
+    func downloadSubCategories(category: String, completion: @escaping (Array<Any>) -> ()) {
         
         let db = FIRDatabase.database().reference()
         db.observe(.value) { (result) in
             
             let resultDict = result.value as! NSDictionary
-            let valueDict = resultDict.value(forKey: "Subcategory") as! NSDictionary
-            let resultArray = valueDict.allValues
+            let valueDict = resultDict.value(forKey: "\(category)") as! NSDictionary
+            let itemsDict = valueDict.value(forKey: "Subcategory") as! NSDictionary
             
             var newArray = [Category]()
-            for dict in resultArray {
-                let dict = dict as! NSDictionary
+            
+            for dict in itemsDict {
+                let dict = dict.value as! NSDictionary
                 let category = Category.init(photo: dict.value(forKey: "photo") as! String, title: dict.value(forKey: "title") as! String)
                 newArray.append(category)
-
             }
+
             completion(newArray)
         }
     }
@@ -38,19 +39,17 @@ class DataManager {
     func downloadItems(category: String, subcategory: String, completion: @escaping (Array<Any>) -> ()) {
         
         let db = FIRDatabase.database().reference()
-        db.observe(.value) { (result) in
-            let resultDict = result.value as! NSDictionary
-            let valueDict = resultDict.value(forKey: "\(category)") as! NSDictionary
-            let itemsDict = valueDict.value(forKey: "Items") as! NSDictionary
-            let resultArray = itemsDict.allValues
+        
+        db.child(category).child("Subcategory").child(subcategory).child("Items").observe(.value) {(result) in
+            
+            let resultArray = result.value as! NSDictionary
             
             var newArray = [ItemModel]()
             for dict in resultArray {
-                let dict = dict as! NSDictionary
-                if (dict.value(forKey: "subcategory") as! String == subcategory) {
-                    let item = ItemModel.init(dict: dict)
-                    newArray.append(item)
-                }
+                let dict = dict.value as! NSDictionary
+                let item = ItemModel.init(dict: dict)
+                newArray.append(item)
+
             }
             completion(newArray)
         }

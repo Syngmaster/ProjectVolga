@@ -28,7 +28,7 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
-        DataManager.sharedInstance.downloadCategories { (array) in
+        DataManager.sharedInstance.downloadSubCategories(category:navTitle!) { (array) in
             self.arrayOfCategories = array
             self.collectionView?.reloadData()
         }

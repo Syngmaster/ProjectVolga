@@ -14,6 +14,7 @@ class ItemDetailsViewController: UIViewController {
     var selectedItem:ItemModel!
     var imageArray:[UIImage]!
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var imageSliderView: ImageSlideshow!
     
     override func viewDidLoad() {
@@ -38,6 +39,7 @@ class ItemDetailsViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
 
+        activityIndicator.startAnimating()
     }
     
     func loadImages(photoURL: String) {
@@ -50,10 +52,10 @@ class ItemDetailsViewController: UIViewController {
             if let data = data {
                 let image = UIImage(data:data)
                 self.imageArray.append(image!)
-                print("image downloaded")
                 
                 if self.imageArray.count == 5 {
                     self.setSliderView(images: self.imageArray)
+                    self.activityIndicator.stopAnimating()
                 }
             }
         }
@@ -71,13 +73,13 @@ class ItemDetailsViewController: UIViewController {
 
     
     func addBottomVC() {
-        if let bottomVC = storyboard?.instantiateViewController(withIdentifier: "FullDescriptionViewController") {
-            addChildViewController(bottomVC)
-            bottomVC.didMove(toParentViewController: self)
-            bottomVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: view.frame.height)
-            
-            view.addSubview(bottomVC.view)
-        }
+        
+        let bottomVC = storyboard?.instantiateViewController(withIdentifier: "FullDescriptionViewController") as! FullDescriptionViewController
+        addChildViewController(bottomVC)
+        bottomVC.didMove(toParentViewController: self)
+        bottomVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: view.frame.height)
+        view.addSubview(bottomVC.view)
+        
         
         if let buttonsVC = storyboard?.instantiateViewController(withIdentifier: "BottomButtonsViewController") {
             addChildViewController(buttonsVC)

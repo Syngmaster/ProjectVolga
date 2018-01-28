@@ -30,7 +30,7 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
-        DataManager.sharedInstance.downloadItems(category: "Men", subcategory: navTitle!) { (result) in
+        DataManager.sharedInstance.downloadItems(category: "MEN", subcategory: navTitle!) { (result) in
             
             print("result - \(result)")
             self.arrayOfItems = result as? [ItemModel]

@@ -32,20 +32,4 @@ class CategoryViewCell: UICollectionViewCell {
         
     }
     
-//    func loadFromURL(url: URL, callback: @escaping (UIImage)->()) {
-//
-//        DispatchQueue.global(qos: .background).async { () -> Void in
-//
-//            let imageData = NSData(contentsOf: url as URL)
-//            if let data = imageData {
-//
-//                DispatchQueue.main.async { () -> Void in
-//                    if let image = UIImage(data: data as Data) {
-//                        callback(image)
-//                    }
-//                }
-//            }
-//        }
-//    }
-    
 }
