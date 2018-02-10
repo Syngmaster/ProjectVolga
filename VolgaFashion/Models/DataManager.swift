@@ -20,10 +20,11 @@ class DataManager {
         let db = FIRDatabase.database().reference()
         db.observe(.value) { (result) in
             
-            let resultDict = result.value as! NSDictionary
-            let valueDict = resultDict.value(forKey: "\(category)") as! NSDictionary
-            let itemsDict = valueDict.value(forKey: "Subcategory") as! NSDictionary
-            
+            guard let resultDict = result.value as? NSDictionary,
+            let valueDict = resultDict.value(forKey: "\(category)") as? NSDictionary,
+                let itemsDict = valueDict.value(forKey: "Subcategory") as? NSDictionary
+                else { completion([]); return }
+                    
             var newArray = [Category]()
             
             for dict in itemsDict {
@@ -40,19 +41,42 @@ class DataManager {
         
         let db = FIRDatabase.database().reference()
         
-        db.child(category).child("Subcategory").child(subcategory).child("Items").observe(.value) {(result) in
-            
-            let resultArray = result.value as! NSDictionary
-            
-            var newArray = [ItemModel]()
-            for dict in resultArray {
-                let dict = dict.value as! NSDictionary
-                let item = ItemModel.init(dict: dict)
-                newArray.append(item)
-
+        if category != subcategory {
+            db.child(category).child("Subcategory").child(subcategory).child("Items").observe(.value) {(result) in
+                
+                if let resultDict = result.value as? NSDictionary {
+                    var newArray = [ItemModel]()
+                    for dict in resultDict {
+                        let dict = dict.value as! NSDictionary
+                        let item = ItemModel.init(dict: dict)
+                        newArray.append(item)
+                    }
+                    completion(newArray)
+                } else {
+                    completion([])
+                }
+                
             }
-            completion(newArray)
+            
+        } else {
+            db.child(category).child("Subcategory").child(subcategory).child("Items").observe(.value) {(result) in
+                
+                if let resultDict = result.value as? NSDictionary {
+                    var newArray = [ItemModel]()
+                    for dict in resultDict {
+                        let dict = dict.value as! NSDictionary
+                        let item = ItemModel.init(dict: dict)
+                        newArray.append(item)
+                    }
+                    completion(newArray)
+                } else {
+                    completion([])
+                }
+                
+            }
         }
+        
+
     }
     
 }

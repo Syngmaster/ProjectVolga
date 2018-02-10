@@ -53,7 +53,7 @@ class ItemDetailsViewController: UIViewController {
                 let image = UIImage(data:data)
                 self.imageArray.append(image!)
                 
-                if self.imageArray.count == 5 {
+                if self.imageArray.count == self.selectedItem.photoArray.count {
                     self.setSliderView(images: self.imageArray)
                     self.activityIndicator.stopAnimating()
                 }
@@ -62,13 +62,13 @@ class ItemDetailsViewController: UIViewController {
     }
     
     func setSliderView(images: [UIImage]) {
-        self.imageSliderView.setImageInputs([
-            ImageSource(image:images[0]),
-            ImageSource(image:images[1]),
-            ImageSource(image:images[2]),
-            ImageSource(image:images[3]),
-            ImageSource(image:images[4])
-            ])
+        
+        var imageSourceArray = [ImageSource]()
+        
+        for image in images {
+            imageSourceArray.append(ImageSource(image:image))
+        }
+        self.imageSliderView.setImageInputs(imageSourceArray)
     }
 
     

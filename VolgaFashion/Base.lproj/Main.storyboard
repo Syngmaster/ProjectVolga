@@ -556,7 +556,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YyN-Za-rbR" kind="show" id="u6t-98-9ad"/>
+                                    <segue destination="YyN-Za-rbR" kind="show" identifier="sale" id="u6t-98-9ad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1064,6 +1064,6 @@
         <image name="wishlist_icon" width="32" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JVg-Qe-Zb2"/>
+        <segue reference="u6t-98-9ad"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -83,6 +83,7 @@ class CategoryViewController: UICollectionViewController, UICollectionViewDelega
             let dvc = segue.destination as! ItemsListViewController
             let sender = sender as! Category
             dvc.navTitle = sender.categoryTitle
+            dvc.category = navTitle
         }
     }
 

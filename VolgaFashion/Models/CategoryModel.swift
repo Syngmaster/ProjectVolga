@@ -10,10 +10,10 @@ import UIKit
 
 class Category {
     
-    var categoryTitle: String
-    var categoryPhoto: String
+    var categoryTitle: String!
+    var categoryPhoto: String!
     
-    init(photo: String, title: String) {
+    init(photo: String!, title: String!) {
         categoryTitle = title
         categoryPhoto = photo
         }

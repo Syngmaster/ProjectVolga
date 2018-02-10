@@ -12,7 +12,8 @@ private let reuseIdentifier = "Cell"
 
 class ItemsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    var navTitle:String?
+    var navTitle:String!
+    var category:String!
     var selectedCell:UICollectionViewCell?
     var arrayOfItems:[ItemModel]!
     
@@ -30,7 +31,7 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         navigationItem.backBarButtonItem?.title = ""
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
-        DataManager.sharedInstance.downloadItems(category: "MEN", subcategory: navTitle!) { (result) in
+        DataManager.sharedInstance.downloadItems(category: category, subcategory: navTitle!) { (result) in
             
             print("result - \(result)")
             self.arrayOfItems = result as? [ItemModel]
@@ -41,12 +42,6 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
     @objc func searchAction(sender: UIBarButtonItem) {
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if let arrayOfItems = arrayOfItems {

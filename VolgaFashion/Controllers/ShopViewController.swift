@@ -42,8 +42,11 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
         case 2: navTitle = "UNISEX"
         default: break
         }
-        
-        self.performSegue(withIdentifier: "category", sender: nil)
+        if sender.tag < 3 {
+            self.performSegue(withIdentifier: "category", sender: nil)
+        } else {
+            self.performSegue(withIdentifier: "sale", sender: nil)
+        }
         
     }
     override func didReceiveMemoryWarning() {
@@ -55,6 +58,12 @@ class ShopViewController: UIViewController, UINavigationControllerDelegate {
         if segue.identifier == "category" {
             let dvc = segue.destination as! CategoryViewController
             dvc.navTitle = navTitle
+        }
+        
+        if segue.identifier == "sale" {
+            let dvc = segue.destination as! ItemsListViewController
+            dvc.navTitle = "SALE"
+            dvc.category = "SALE"
         }
         
     }
