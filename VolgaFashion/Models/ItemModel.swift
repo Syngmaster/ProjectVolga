@@ -15,11 +15,13 @@ class ItemModel {
     var itemDescription: String!
     var isOnSale: Bool!
     var isWishlisted: Bool!
+    var isInBasket: Bool!
     var subcategory: String!
     var photoArray:[String]!
     
     init(dict:NSDictionary) {
         isWishlisted = false
+        isInBasket = false
         isOnSale = false
         itemPrice = dict.value(forKey: "price") as! Int
         itemName = dict.value(forKey: "itemName") as! String

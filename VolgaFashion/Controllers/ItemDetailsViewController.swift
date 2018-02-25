@@ -81,11 +81,11 @@ class ItemDetailsViewController: UIViewController {
         view.addSubview(bottomVC.view)
         
         
-        if let buttonsVC = storyboard?.instantiateViewController(withIdentifier: "BottomButtonsViewController") {
+        if let buttonsVC = storyboard?.instantiateViewController(withIdentifier: "BottomButtonsViewController") as? BottomButtonsViewController {
             addChildViewController(buttonsVC)
             buttonsVC.didMove(toParentViewController: self)
             buttonsVC.view.frame = CGRect(x: 0, y: view.frame.maxY, width: view.frame.width, height: 50)
-            
+            buttonsVC.item = selectedItem
             view.addSubview(buttonsVC.view)
             view.bringSubview(toFront: buttonsVC.view)
         }

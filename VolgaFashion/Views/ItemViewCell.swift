@@ -16,15 +16,20 @@ class ItemViewCell: UICollectionViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var addToWishlistButton: UIButton!
     
+
     @IBAction func addToWishlistAction(_ sender: UIButton) {
-        
+        print("wishlist")
     }
     
     func configureCell(item:ItemModel) {
         itemNameLabel.text = item.itemName
         priceLabel.text = "\(item.itemPrice!)€"
         imageView.contentMode = .scaleAspectFill
-
+        if item.isWishlisted {
+            addToWishlistButton.setImage(UIImage(named:"addtowishlist_full_btn.png"), for: .normal)
+        } else {
+            addToWishlistButton.setImage(UIImage(named:"addtowishlist_empty_btn.png"), for: .normal)
+        }
         let storage = FIRStorage.storage()
         let imageRef = storage.reference(forURL: item.photoArray.first!)
         
@@ -34,10 +39,6 @@ class ItemViewCell: UICollectionViewCell {
                 let image = UIImage(data:data)
                 self.imageView.image = image
             }
-            
         }
-
     }
-    
-    
 }

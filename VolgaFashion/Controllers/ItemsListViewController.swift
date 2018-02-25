@@ -38,6 +38,11 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
             self.collectionView?.reloadData()
         }
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView?.reloadData()
+    }
+    
     
     @objc func searchAction(sender: UIBarButtonItem) {
         
@@ -61,7 +66,6 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         
         let item = arrayOfItems![indexPath.row]
         cell.configureCell(item: item)
-        cell.addToWishlistButton.imageView?.image = UIImage(named:"addtowishlist_empty_btn.png")
         
         return cell
     }
