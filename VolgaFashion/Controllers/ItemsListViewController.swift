@@ -47,6 +47,21 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
     @objc func searchAction(sender: UIBarButtonItem) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "details" {
+            let dvc = segue.destination as! ItemDetailsViewController
+            if let item = sender as? ItemModel {
+                dvc.selectedItem = item
+            }
+        }
+    }
+}
+
+// MARK: UICollectionViewDataSource
+
+extension ItemsListViewController {
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if let arrayOfItems = arrayOfItems {
@@ -55,14 +70,14 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
             return 0
         }
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ItemViewCell
         
-//        cell.imageView.image = UIImage(named:"item_photo.jpg")
-//        cell.imageView.contentMode = .scaleAspectFill
-//        cell.itemNameLabel.text = "VINTAGE 80S JACKET"
-//        cell.priceLabel.text = "€400"
+        //        cell.imageView.image = UIImage(named:"item_photo.jpg")
+        //        cell.imageView.contentMode = .scaleAspectFill
+        //        cell.itemNameLabel.text = "VINTAGE 80S JACKET"
+        //        cell.priceLabel.text = "€400"
         
         let item = arrayOfItems![indexPath.row]
         cell.configureCell(item: item)
@@ -70,21 +85,15 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         return cell
     }
     
+}
+// MARK: UICollectionViewDelegate
+
+extension ItemsListViewController {
+
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/2.6)
-
-    }
-    
-
-    // MARK: UICollectionViewDelegate
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "details" {
-            let dvc = segue.destination as! ItemDetailsViewController
-            if let item = sender as? ItemModel {
-                dvc.selectedItem = item
-            }
-        }
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -94,5 +103,5 @@ class ItemsListViewController: UICollectionViewController, UICollectionViewDeleg
         self.performSegue(withIdentifier: "details", sender: item)
         
     }
-
+    
 }

@@ -40,6 +40,8 @@
 		DC17BC511FB9FFC70056035A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC501FB9FFC70056035A /* SignInViewController.swift */; };
 		DC17BC531FBA01300056035A /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC521FBA01300056035A /* MyAccountViewController.swift */; };
 		DC17BC551FBA05FE0056035A /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17BC541FBA05FE0056035A /* CustomNavView.swift */; };
+		DC496B5220507D7400CF3B4C /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC496B5120507D7400CF3B4C /* PersistanceManager.swift */; };
+		DC496B5420507F7500CF3B4C /* WishlistViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC496B5320507F7500CF3B4C /* WishlistViewCell.swift */; };
 		DC7506441FBB7338007CF6A6 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506431FBB7338007CF6A6 /* ItemViewCell.swift */; };
 		DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */; };
 		DC7506481FBC6C4B007CF6A6 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */; };
@@ -89,6 +91,8 @@
 		DC17BC501FB9FFC70056035A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DC17BC521FBA01300056035A /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		DC17BC541FBA05FE0056035A /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		DC496B5120507D7400CF3B4C /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		DC496B5320507F7500CF3B4C /* WishlistViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewCell.swift; sourceTree = "<group>"; };
 		DC7506431FBB7338007CF6A6 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 		DC7506451FBC6BBB007CF6A6 /* ItemTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTitleLabel.swift; sourceTree = "<group>"; };
 		DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 				DCB03CB41FD5CF6A001091BA /* DataManager.swift */,
 				DCB03CB61FD73DA8001091BA /* CategoryModel.swift */,
 				DCC0B94C1FDDAD8300257EE7 /* ItemModel.swift */,
+				DC496B5120507D7400CF3B4C /* PersistanceManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				DC7506471FBC6C4B007CF6A6 /* PriceLabel.swift */,
 				DC7506491FBC6D8B007CF6A6 /* CustomItemCellView.swift */,
 				DC0019DC1FBE107A00651835 /* CategoryViewCell.swift */,
+				DC496B5320507F7500CF3B4C /* WishlistViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -393,9 +399,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC496B5420507F7500CF3B4C /* WishlistViewCell.swift in Sources */,
 				DC0019D51FBE055C00651835 /* ImageSlideshowItem.swift in Sources */,
 				DC7506461FBC6BBB007CF6A6 /* ItemTitleLabel.swift in Sources */,
 				DC0019D81FBE055C00651835 /* UIImageView+Tools.swift in Sources */,
+				DC496B5220507D7400CF3B4C /* PersistanceManager.swift in Sources */,
 				DC17BC4F1FB9F5EB0056035A /* MyBagViewController.swift in Sources */,
 				DC0019331FBC8EED00651835 /* ItemDetailsViewController.swift in Sources */,
 				DCC0B94D1FDDAD8300257EE7 /* ItemModel.swift in Sources */,
